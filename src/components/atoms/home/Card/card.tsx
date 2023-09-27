@@ -1,10 +1,9 @@
-import { ReactElement } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './card.module.scss'
 
 interface IProps {
-  children: ReactElement
+  children: string
   href: string
   src: string
   type: '1' | '2' | '3'
@@ -25,7 +24,9 @@ export default function Card({ children, href, src, type }: IProps) {
   return (
     <div className={`${styles.card} ${getStyle()}`}>
       <Link href={href}>
-        <div>{children}</div>
+        <div>
+          <span>{children}</span>
+        </div>
         <Image src={src} alt="image" width={10} height={10} />
       </Link>
     </div>

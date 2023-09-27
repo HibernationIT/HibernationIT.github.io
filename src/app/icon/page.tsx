@@ -1,4 +1,4 @@
-import Header from '@/src/components/templates/Header/header'
+import Header from '@/src/components/templates/common/Header/header'
 
 export default function Icon() {
   return (

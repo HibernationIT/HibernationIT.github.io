@@ -24,6 +24,7 @@
   "rules": {
     "react/react-in-jsx-scope": "off",
     "react/no-array-index-key": "off",
+    "react/require-default-props": "off",
     "react/jsx-props-no-spreading": 0,
     "@typescript-eslint/semi": "off",
     "react/jsx-filename-extension": ["warn", { "extensions": [".ts", ".tsx"] }],

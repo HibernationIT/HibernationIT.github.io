@@ -1,10 +1,11 @@
-import Header from '@/src/components/templates/Header/header'
+import Nav from '@/src/components/templates/project/Nav/nav'
+import Template from '@/src/components/templates/project/Template/template'
 
-export default function Project() {
+export default async function Project() {
   return (
-    <main>
-      <Header activePath="project" />
-      <div>project</div>
-    </main>
+    <>
+      <Nav />
+      <Template />
+    </>
   )
 }
