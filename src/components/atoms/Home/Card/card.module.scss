@@ -1,0 +1,119 @@
+.card {
+  position: relative;
+
+  overflow: hidden;
+  border-radius: 10px;
+
+  transition: all 100ms linear;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+
+  a {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    div {
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      transition: opacity ease-in-out 200ms;
+
+      width: 100%;
+      height: 100%;
+
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+
+      span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        translate: -50% -50%;
+
+        vertical-align: bottom;
+        font-size: 36px;
+        font-weight: 700;
+        color: #FFFFFF;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+}
+@media (hover:hover) and (pointer:fine)  {
+  .card:hover {
+    a div {
+      opacity: 1;
+    }
+  }
+}
+
+.type1 {
+  width: 300px;
+  height: 650px;
+}
+
+.type2 {
+  width: 450px;
+  height: 300px;
+}
+
+.type3 {
+  width: 350px;
+  height: 300px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .card {
+    box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3);
+
+    a > div > span {
+      font-size: 24px;
+    }
+  }
+
+  .type1 {
+    width: 192px;
+    height: 416px;
+  }
+
+  .type2 {
+    width: 288px;
+    height: 192px;
+  }
+
+  .type3 {
+    width: 224px;
+    height: 192px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .type1 {
+    width: 164px;
+    height: 356px;
+  }
+
+  .type2 {
+    width: 258px;
+    height: 172px;
+  }
+
+  .type3 {
+    width: 200px;
+    height: 172px;
+  }
+}

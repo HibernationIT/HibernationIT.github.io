@@ -1,9 +1,6 @@
-/** @type {{experimental: {appDir: boolean}}} */
+/** @type {{trailingSlash: boolean}} */
 const nextConfig = {
   trailingSlash: true,
-  experimental: {
-    appDir: true,
-  },
 }
 
 module.exports = nextConfig
