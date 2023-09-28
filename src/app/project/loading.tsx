@@ -1,10 +1,16 @@
 import Nav from '@/src/components/templates/project/Nav/nav'
+import LoadingCard from '@/src/components/atoms/project/LoadingCard/loadingCard'
+import styles from './loading.module.scss'
 
 export default function Loading() {
   return (
     <>
       <Nav />
-      loading...
+      <div className={styles.template}>
+        <LoadingCard />
+        <LoadingCard />
+        <LoadingCard />
+      </div>
     </>
   )
 }

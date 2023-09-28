@@ -1,0 +1,78 @@
+.card {
+  width: 354px;
+  height: 352px;
+
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 16px 36px 0 rgba(112, 144, 176, 0.15);
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height:  236px;
+
+  background: linear-gradient(-45deg, #DDDDDD, #DDDDDD, #E9E9E9, #DDDDDD, #DDDDDD);
+  background-size: 400% 100%;
+  animation: sparkle 3s ease-in-out infinite;
+  animation-delay: 1000ms;
+}
+
+.content {
+  padding: 16px 20px;
+
+  box-sizing: border-box;
+}
+
+.title {
+  width: 200px;
+  height: 16px;
+  margin: 2px 0 13px 0;
+
+  border-radius: 8px;
+  background: linear-gradient(-45deg, #DDDDDD, #DDDDDD, #E9E9E9, #DDDDDD, #DDDDDD);
+  background-size: 400% 100%;
+  animation: sparkle 3s ease-in-out infinite;
+  animation-delay: 1000ms;
+}
+
+.description {
+  width: 314px;
+  height: 14px;
+  margin: 0 0 23px 0;
+
+  border-radius: 8px;
+  background: linear-gradient(-45deg, #DDDDDD, #DDDDDD, #E9E9E9, #DDDDDD, #DDDDDD);
+  background-size: 400% 100%;
+  animation: sparkle 3s ease-in-out infinite;
+  animation-delay: 1000ms;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+
+  div {
+    width: 52px;
+    height: 16px;
+
+    border-radius: 8px;
+    background: linear-gradient(-45deg, #DDDDDD, #DDDDDD, #E9E9E9, #DDDDDD, #DDDDDD);
+    background-size: 400% 100%;
+    animation: sparkle 3s ease-in-out infinite;
+    animation-delay: 1000ms;
+  }
+}
+
+@keyframes sparkle {
+  0% {
+    background-position: 100% 0;
+  }
+  10% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}

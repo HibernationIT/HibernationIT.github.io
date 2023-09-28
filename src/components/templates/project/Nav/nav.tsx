@@ -23,7 +23,7 @@ export default function Nav({ activePath }: IProps) {
         Backend Application
       </Type>
       <Type
-        href={activePath === 'frontend' ? '/project' : '/project/front'}
+        href={activePath === 'frontend' ? '/project' : '/project/frontend'}
         src="/images/project/frontend_icon.svg"
         active={activePath === 'frontend'}
       >
