@@ -1,10 +1,17 @@
-import notion2md from '@/src/api/common/notion2md'
 import LogFactory from '@/src/api/common/logger'
+import Notion2Component from '@/src/api/notion/notion2Component'
+import notion from '@/src/api/common/notion'
+import NotionBlock from '@/src/components/atoms/notion/Block/notionBlock'
 
 export default async function ProjectPage() {
-  const md = await notion2md.pageToMarkdown("dd635411d706430a9da5d6a4db67f862")
-  const stringBlock = notion2md.toMarkdownString(md)
-  LogFactory.info(stringBlock)
+  const n2c = new Notion2Component({ client: notion })
+  const blocks = await n2c.getBlocks('abb07387c63645bbbbf093859db799bf')
 
-  return <div>{ stringBlock.parent }</div>
+  return (
+    <div>
+      {blocks.map((block, idx) => (
+        <NotionBlock key={idx} block={block} />
+      ))}
+    </div>
+  )
 }
