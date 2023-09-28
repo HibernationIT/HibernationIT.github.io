@@ -29,7 +29,7 @@ export default function Template({ list }: IProps) {
         return (
           <Card
             key={idx}
-            href={properties.title.rich_text[0].plain_text}
+            href={`/project/${properties.title.rich_text[0].plain_text}`}
             title={properties.Title.title[0].plain_text}
             type={properties.type.select.name}
             description={properties.description.rich_text[0].plain_text}

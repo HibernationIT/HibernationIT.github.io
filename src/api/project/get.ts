@@ -1,11 +1,9 @@
 import LogFactory from '@/src/api/common/logger'
-import { Client } from '@notionhq/client'
-import { QueryDatabaseParameters } from '@notionhq/client/build/src/api-endpoints'
+import notion from '@/src/api/common/notion'
 
 export default async function getList(
   type?: 'mobile' | 'frontend' | 'backend',
 ) {
-  const notion = new Client({ auth: process.env.NOTION_API_SECRET_KEY })
   const databaseId = process.env.NOTION_PROJECT_DATABASE || ''
 
   const filter: { and: any[] } = {
