@@ -58,13 +58,17 @@ export default async function BookmarkBlock({ block }: IProps) {
 
   return (
     <Link href={block.bookmark.url} className={styles.bookmark} target="_blank">
-      <Image
-        className={styles.image}
-        src={getImage(elements)}
-        alt="image"
-        width={200}
-        height={124}
-      />
+      {getImage(elements) !== undefined ? (
+        <Image
+          className={styles.image}
+          src={getImage(elements)}
+          alt="image"
+          width={200}
+          height={124}
+        />
+      ) : (
+        ''
+      )}
       <div className={styles.content}>
         <p>{getTitle(elements)}</p>
         <p>{getDescription(elements)}</p>
