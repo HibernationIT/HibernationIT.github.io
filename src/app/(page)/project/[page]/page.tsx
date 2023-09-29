@@ -1,6 +1,8 @@
 import Notion2Component from '@/src/api/notion/notion2Component'
-import notion from '@/src/api/common/notion'
 import NotionBlock from '@/src/components/atoms/notion/Block/notionBlock'
+import notion from '@/src/api/common/notion'
+import Highlight from 'react-highlight'
+import 'highlight.js/styles/github.css'
 
 export default async function ProjectPage() {
   const n2c = new Notion2Component({ client: notion })

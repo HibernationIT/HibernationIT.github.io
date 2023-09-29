@@ -1,5 +1,5 @@
 import NotionBlock from '@/src/components/atoms/notion/Block/notionBlock'
-import RichText from '@/src/components/atoms/notion/RichText/richText'
+import RichTexts from '@/src/components/atoms/notion/RichText/richTexts'
 import styles from './bulletedListItemBlock.module.scss'
 
 interface IProps {
@@ -18,7 +18,7 @@ export default function BulletedListItemBlock({ block, count }: IProps) {
   return (
     <ul className={`${styles.list} ${getType()}`}>
       <li>
-        <RichText richTexts={block.bulleted_list_item.rich_text} />
+        <RichTexts richTexts={block.bulleted_list_item.rich_text} />
         {block.has_children
           ? block.child.map((b, idx) => (
               <NotionBlock key={idx} block={b} count={(count || 0) + 1} />

@@ -33,8 +33,6 @@ export default async function getList(
       },
     ],
   })
-
-  LogFactory.debug(response)
   LogFactory.info(`(project > get) length: ${response.results.length}`)
 
   return response
