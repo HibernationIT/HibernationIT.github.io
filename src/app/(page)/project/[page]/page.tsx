@@ -1,4 +1,3 @@
-import LogFactory from '@/src/api/common/logger'
 import Notion2Component from '@/src/api/notion/notion2Component'
 import notion from '@/src/api/common/notion'
 import NotionBlock from '@/src/components/atoms/notion/Block/notionBlock'
@@ -8,10 +7,10 @@ export default async function ProjectPage() {
   const blocks = await n2c.getBlocks('abb07387c63645bbbbf093859db799bf')
 
   return (
-    <div>
+    <>
       {blocks.map((block, idx) => (
         <NotionBlock key={idx} block={block} />
       ))}
-    </div>
+    </>
   )
 }
