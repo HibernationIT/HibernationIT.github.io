@@ -1,7 +1,6 @@
 import Notion2Component from '@/src/api/notion/notion2Component'
 import NotionBlock from '@/src/components/atoms/notion/Block/notionBlock'
 import notion from '@/src/api/common/notion'
-import 'highlight.js/styles/github.css'
 
 export default async function ProjectPage() {
   const n2c = new Notion2Component({ client: notion })

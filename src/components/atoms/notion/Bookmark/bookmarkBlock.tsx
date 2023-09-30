@@ -3,65 +3,48 @@ import Image from 'next/image'
 import styles from './bookmarkBlock.module.scss'
 import Link from 'next/link'
 
-interface IProps {
-  block: Bookmark
-}
-
-export default async function BookmarkBlock({ block }: IProps) {
+export default async function BookmarkBlock({ block }: { block: Bookmark }) {
   const html = await fetch(block.bookmark.url).then((res) => res.text())
   const elements = parse(html)
 
-  function getTitle(element) {
-    return (
-      element.querySelector('meta[name="title"]')?.getAttribute('content') ||
-      element
-        .querySelector('meta[property="og:title"]')
-        ?.getAttribute('content') ||
-      element
-        .querySelector('meta[name="twitter:title"]')
-        ?.getAttribute('content') ||
-      element.querySelector('title').text
-    )
-  }
-  function getDescription(element) {
-    return (
-      element
-        .querySelector('meta[name="description"]')
-        ?.getAttribute('content') ||
-      element
-        .querySelector('meta[property="og:description"]')
-        ?.getAttribute('content') ||
-      element
-        .querySelector('meta[name="twitter:description"]')
-        ?.getAttribute('content')
-    )
-  }
-
-  function getImage(element) {
-    return (
-      element
-        .querySelector('meta[property="og:image"]')
-        ?.getAttribute('content') ||
-      element.querySelector('meta[name="twitter:url"]')?.getAttribute('content')
-    )
-  }
-
-  function getIcon(element) {
-    const url = element
-      .querySelector('link[type="image/x-icon"]')
-      ?.getAttribute('href')
-
-    if (url !== undefined && url.startsWith('/'))
-      return block.bookmark.url + url
-    return url
-  }
+  const title =
+    elements.querySelector('meta[name="title"]')?.getAttribute('content') ||
+    elements
+      .querySelector('meta[property="og:title"]')
+      ?.getAttribute('content') ||
+    elements
+      .querySelector('meta[name="twitter:title"]')
+      ?.getAttribute('content') ||
+    elements.querySelector('title')?.text
+  const description =
+    elements
+      .querySelector('meta[name="description"]')
+      ?.getAttribute('content') ||
+    elements
+      .querySelector('meta[property="og:description"]')
+      ?.getAttribute('content') ||
+    elements
+      .querySelector('meta[name="twitter:description"]')
+      ?.getAttribute('content')
+  const image =
+    elements
+      .querySelector('meta[property="og:image"]')
+      ?.getAttribute('content') ||
+    elements.querySelector('meta[name="twitter:url"]')?.getAttribute('content')
+  const iconUrl = elements
+    .querySelector('link[type="image/x-icon"]')
+    ?.getAttribute('href')
+  const icon =
+    iconUrl !== undefined && iconUrl.startsWith('/')
+      ? block.bookmark.url + iconUrl
+      : iconUrl
 
   return (
     <Link href={block.bookmark.url} className={styles.bookmark} target="_blank">
-      {getImage(elements) !== undefined ? (
+      {image !== undefined ? (
         <Image
           className={styles.image}
-          src={getImage(elements)}
+          src={image}
           alt="image"
           width={200}
           height={124}
@@ -70,11 +53,11 @@ export default async function BookmarkBlock({ block }: IProps) {
         ''
       )}
       <div className={styles.content}>
-        <p>{getTitle(elements)}</p>
-        <p>{getDescription(elements)}</p>
+        <p>{title}</p>
+        <p>{description}</p>
         <div className={styles.url}>
-          {getIcon(elements) !== undefined ? (
-            <Image src={getIcon(elements)} alt="icon" width={20} height={20} />
+          {icon !== undefined ? (
+            <Image src={icon} alt="icon" width={20} height={20} />
           ) : (
             ''
           )}

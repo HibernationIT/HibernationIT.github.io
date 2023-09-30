@@ -1,6 +1,12 @@
 .code {
   width: 100%;
-  overflow-x: scroll;
+  padding: 16px 20px;
 
+  background-color: #F4F5FB;
   border-radius: 16px;
+  box-sizing: border-box;
+
+  & > pre > code {
+    background-color: #F4F5FB;
+  }
 }

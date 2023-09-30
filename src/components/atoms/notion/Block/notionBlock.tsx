@@ -3,6 +3,10 @@ import BulletedListItemBlock from '@/src/components/atoms/notion/BulletedListIte
 import CalloutBlock from '@/src/components/atoms/notion/Callout/CalloutBlock'
 import CodeBlock from '@/src/components/atoms/notion/Code/codeBlock'
 import styles from './notionBlock.module.scss'
+import ColumnBlock from '@/src/components/atoms/notion/Column/columnBlock'
+import ColumnListBlock from '@/src/components/atoms/notion/ColumnList/columnListBlock'
+import EquationBlock from '@/src/components/atoms/notion/Equation/equationBlock'
+import DividerBlock from '@/src/components/atoms/notion/Divider/dividerBlock'
 
 interface IProps {
   block: Block
@@ -27,6 +31,21 @@ export default function NotionBlock({ block, count }: IProps) {
       case 'code': {
         const code = block as Code
         return <CodeBlock block={code} />
+      }
+      case 'column_list': {
+        const columnList = block as ColumnList
+        return <ColumnListBlock block={columnList} />
+      }
+      case 'column': {
+        const column = block as Column
+        return <ColumnBlock block={column} />
+      }
+      case 'divider': {
+        return <DividerBlock />
+      }
+      case 'equation': {
+        const equation = block as Equation
+        return <EquationBlock block={equation} />
       }
       default:
         return <div>block</div>

@@ -74,7 +74,7 @@ interface DefaultBlock {
   last_edited_by: object
   has_children: boolean
   archived: boolean
-  child: Block[]
+  children: Block[]
 }
 
 interface Bookmark extends DefaultBlock {

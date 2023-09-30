@@ -1,16 +1,15 @@
+'use client'
+import Highlight from 'react-highlight'
+import RichTexts from '@/src/components/atoms/notion/RichText/richTexts'
 import styles from './codeBlock.module.scss'
-import SyntaxHighlighter from 'react-syntax-highlighter/dist/cjs/prism'
+import 'highlight.js/styles/github.css'
 
-interface IProps {
-  block: Code
-}
-
-export default function CodeBlock({ block }: IProps) {
+export default function CodeBlock({ block }: { block: Code }) {
   return (
     <div className={styles.code}>
-      <SyntaxHighlighter language={block.code.language}>
-        {block.code.rich_text.map((text) => text.plain_text)}
-      </SyntaxHighlighter>
+      <Highlight className={block.code.language}>
+        <RichTexts richTexts={block.code.rich_text} />
+      </Highlight>
     </div>
   )
 }

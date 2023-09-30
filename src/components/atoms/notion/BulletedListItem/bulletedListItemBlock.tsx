@@ -20,7 +20,7 @@ export default function BulletedListItemBlock({ block, count }: IProps) {
       <li>
         <RichTexts richTexts={block.bulleted_list_item.rich_text} />
         {block.has_children
-          ? block.child.map((b, idx) => (
+          ? block.children.map((b, idx) => (
               <NotionBlock key={idx} block={b} count={(count || 0) + 1} />
             ))
           : ''}

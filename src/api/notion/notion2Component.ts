@@ -23,10 +23,10 @@ export default class Notion2Component {
   private async getAll(block: string): Promise<Block[]> {
     const children: Block[] = await this.getChildren(block)
 
-    return await Promise.all(
+    return Promise.all(
       children.map(async (child: Block) => {
         if (child.has_children) {
-          child.child = await this.getAll(child.id)
+          child.children = await this.getAll(child.id)
           return child
         }
         return child
