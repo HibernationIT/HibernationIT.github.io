@@ -21,5 +21,5 @@ export default function RichTexts({ richTexts }: IProps) {
     }
   }
 
-  return <div className={styles.richTexts}>{array}</div>
+  return <span className={styles.richTexts}>{array}</span>
 }
