@@ -10,14 +10,14 @@ export default function RichTexts({ richTexts }: IProps) {
 
   for (let i = 0; i < richTexts.length; i++) {
     if (!richTexts[i].annotations.code) {
-      array.push(<RichText richText={richTexts[i]} />)
+      array.push(<RichText key={i} richText={richTexts[i]} />)
     } else {
       const codes = []
       while (i < richTexts.length && richTexts[i].annotations.code) {
-        codes.push(<RichText richText={richTexts[i]} />)
+        codes.push(<RichText key={i} richText={richTexts[i]} />)
         i++
       }
-      array.push(<code>{codes}</code>)
+      array.push(<code key={`c${i}`}>{codes}</code>)
     }
   }
 

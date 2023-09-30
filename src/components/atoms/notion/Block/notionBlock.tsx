@@ -12,6 +12,8 @@ import ImageBlock from '@/src/components/atoms/notion/Image/imageBlock'
 import NumberedListItemBlock from '@/src/components/atoms/notion/NumberedListItem/numberedListItemBlock'
 import styles from './notionBlock.module.scss'
 import ParagraphBlock from '@/src/components/atoms/notion/Paragraph/paragraphBlock'
+import QuoteBlock from '@/src/components/atoms/notion/Quote/quoteBlock'
+import TableBlock from '@/src/components/atoms/notion/Table/tableBlock'
 
 interface IProps {
   block: Block
@@ -81,6 +83,14 @@ export default function NotionBlock({ block, numbered }: IProps) {
       case 'paragraph': {
         const paragraph = block as Paragraph
         return <ParagraphBlock block={paragraph} />
+      }
+      case 'quote': {
+        const quote = block as Quote
+        return <QuoteBlock block={quote} />
+      }
+      case 'table': {
+        const table = block as Table
+        return <TableBlock block={table} />
       }
       default:
         return <div>block</div>
