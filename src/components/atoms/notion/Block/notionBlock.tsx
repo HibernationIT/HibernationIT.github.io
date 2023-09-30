@@ -8,14 +8,17 @@ import EquationBlock from '@/src/components/atoms/notion/Equation/equationBlock'
 import DividerBlock from '@/src/components/atoms/notion/Divider/dividerBlock'
 import FileBlock from '@/src/components/atoms/notion/File/fileBlock'
 import HeaderBlock from '@/src/components/atoms/notion/Header/headerBlock'
+import ImageBlock from '@/src/components/atoms/notion/Image/imageBlock'
+import NumberedListItemBlock from '@/src/components/atoms/notion/NumberedListItem/numberedListItemBlock'
 import styles from './notionBlock.module.scss'
+import ParagraphBlock from '@/src/components/atoms/notion/Paragraph/paragraphBlock'
 
 interface IProps {
   block: Block
-  count?: number
+  numbered?: number
 }
 
-export default function NotionBlock({ block, count }: IProps) {
+export default function NotionBlock({ block, numbered }: IProps) {
   function getBlock() {
     switch (block.type) {
       case 'bookmark': {
@@ -24,7 +27,7 @@ export default function NotionBlock({ block, count }: IProps) {
       }
       case 'bulleted_list_item': {
         const bulletedListItem = block as BulletedListItem
-        return <BulletedListItemBlock block={bulletedListItem} count={count} />
+        return <BulletedListItemBlock block={bulletedListItem} />
       }
       case 'callout': {
         const callout = block as Callout
@@ -64,6 +67,20 @@ export default function NotionBlock({ block, count }: IProps) {
       case 'heading_3': {
         const header3 = block as Header3
         return <HeaderBlock block={header3} />
+      }
+      case 'image': {
+        const image = block as Image
+        return <ImageBlock block={image} />
+      }
+      case 'numbered_list_item': {
+        const numberedListItem = block as NumberedListItem
+        return (
+          <NumberedListItemBlock block={numberedListItem} number={numbered} />
+        )
+      }
+      case 'paragraph': {
+        const paragraph = block as Paragraph
+        return <ParagraphBlock block={paragraph} />
       }
       default:
         return <div>block</div>

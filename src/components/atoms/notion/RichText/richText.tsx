@@ -1,20 +1,13 @@
-import styles from './richText.module.scss'
 import NotionColor from '@/src/components/atoms/notion/notionColor'
+import styles from './richText.module.scss'
 
-interface IProps {
-  richText: RichText
-}
-
-export default function RichText({ richText }: IProps) {
+export default function RichText({ richText }: { richText: RichText }) {
   let style = styles.richText
   if (richText.annotations.bold) style += ` ${styles.bold}`
   if (richText.annotations.italic) style += ` ${styles.italic}`
   if (richText.annotations.underline) style += ` ${styles.underline}`
   if (richText.annotations.strikethrough) style += ` ${styles.strikethrough}`
-
   style += ` ${NotionColor(richText.annotations.color)}`
 
-  if (richText.annotations.code)
-    return <code className={style}>{richText.plain_text}</code>
-  else return <span className={style}>{richText.plain_text}</span>
+  return <span className={style}>{richText.plain_text}</span>
 }

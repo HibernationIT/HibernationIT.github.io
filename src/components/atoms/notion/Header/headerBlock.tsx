@@ -1,4 +1,5 @@
 'use client'
+
 import { useState } from 'react'
 import RichTexts from '@/src/components/atoms/notion/RichText/richTexts'
 import NotionBlock from '@/src/components/atoms/notion/Block/notionBlock'

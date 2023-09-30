@@ -26,9 +26,14 @@
     "react/no-array-index-key": "off",
     "react/require-default-props": "off",
     "react/jsx-props-no-spreading": 0,
+    "react/button-has-type": "off",
     "@typescript-eslint/semi": "off",
     "react/jsx-filename-extension": ["warn", { "extensions": [".ts", ".tsx"] }],
+    "jsx-a11y/img-redundant-alt": "off",
+    "@next/next/no-img-element": "off",
+    "no-nested-ternary": "off",
     "no-useless-catch": "off",
+    "no-plusplus": "off",
     "no-console": "off",
     "import/no-cycle": "off"
   }

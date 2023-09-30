@@ -1,3 +1,14 @@
+.richTexts {
+  code {
+    padding: 2px 4px;
+    font-family: monospace;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #F4F5FB;
+    color: #CE613E;
+  }
+}
+
 .richText {
   line-height: 20px;
   white-space: pre;
@@ -12,7 +23,7 @@
 }
 
 .underline {
-  border-bottom: 1.5px solid black;
+  border-bottom: 1px solid black;
 }
 
 .strikethrough {
