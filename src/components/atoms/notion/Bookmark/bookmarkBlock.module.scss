@@ -16,6 +16,12 @@
   }
 }
 
+@media (hover:hover) and (pointer:fine)  {
+  .bookmark:hover {
+    background-color: #EEEEEE;
+  }
+}
+
 .image {
   width: 200px;
   height: 124px;

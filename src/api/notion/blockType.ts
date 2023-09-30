@@ -139,31 +139,25 @@ interface FileBlock extends DefaultBlock {
   file: File | External
 }
 
+interface Heading {
+  rich_text: RichText[]
+  color: string
+  is_toggleable: boolean
+}
+
 interface Header1 extends DefaultBlock {
   type: 'heading_1'
-  heading_1: {
-    rich_text: RichText[]
-    color: string
-    is_toggleable: boolean
-  }
+  heading_1: Heading
 }
 
 interface Header2 extends DefaultBlock {
   type: 'heading_2'
-  heading_2: {
-    rich_text: RichText[]
-    color: string
-    is_toggleable: boolean
-  }
+  heading_2: Heading
 }
 
 interface Header3 extends DefaultBlock {
   type: 'heading_3'
-  heading_3: {
-    rich_text: RichText[]
-    color: string
-    is_toggleable: boolean
-  }
+  heading_3: Heading
 }
 
 interface Image extends DefaultBlock {
