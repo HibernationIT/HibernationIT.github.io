@@ -1,7 +1,7 @@
 import parse from 'node-html-parser'
 import Image from 'next/image'
-import styles from './bookmarkBlock.module.scss'
 import Link from 'next/link'
+import styles from './bookmarkBlock.module.scss'
 
 export default async function BookmarkBlock({ block }: { block: Bookmark }) {
   const html = await fetch(block.bookmark.url).then((res) => res.text())

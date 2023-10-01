@@ -1,6 +1,6 @@
 import Header from '@/src/components/templates/common/Header/header'
-import styles from './loading.module.scss'
 import Image from 'next/image'
+import styles from './loading.module.scss'
 
 export default function Loading() {
   return (
@@ -21,12 +21,15 @@ export default function Loading() {
         </section>
       </main>
       <div className={styles.loading}>
-        <Image
-          src="/images/loading.svg"
-          alt="loading..."
-          width={86}
-          height={86}
-        />
+        <div>
+          <Image
+            src="/images/loading.svg"
+            alt="loading..."
+            width={86}
+            height={86}
+          />
+          <p>loading</p>
+        </div>
       </div>
     </>
   )

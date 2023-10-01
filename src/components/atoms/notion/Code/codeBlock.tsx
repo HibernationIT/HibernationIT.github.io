@@ -1,4 +1,5 @@
 'use client'
+
 import Highlight from 'react-highlight'
 import RichTexts from '@/src/components/atoms/notion/RichText/richTexts'
 import styles from './codeBlock.module.scss'

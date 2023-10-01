@@ -11,6 +11,7 @@ export default class LogFactory {
     )
       console.error(this.format('ERROR'), message)
   }
+
   static info(message: any) {
     if (this.level === 'info' || this.level === 'debug')
       console.info(this.format('INFO'), message)

@@ -1,4 +1,5 @@
 'use client'
+
 import { MathJax, MathJaxContext } from 'better-react-mathjax'
 import styles from './equationBlock.module.scss'
 

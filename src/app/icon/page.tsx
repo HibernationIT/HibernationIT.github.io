@@ -1,10 +1,22 @@
 import Header from '@/src/components/templates/common/Header/header'
+import Template from '@/src/components/templates/icon/template/template'
+import { getIcons } from '@/src/api/icon/get'
+import styles from './page.module.scss'
 
-export default function Icon() {
+export default async function Icon() {
+  const list = await getIcons()
+
   return (
     <main>
       <Header activePath="icon" />
-      <div>icon</div>
+      <section>
+        <h1 className={styles.title}>Icons</h1>
+        <p className={styles.description}>
+          아래의 아이콘은 제가 직접 디자인한 아이콘으로, 저작권 표시 없이 마음껏
+          사용하여도 괜찮습니다.
+        </p>
+        <Template list={list} />
+      </section>
     </main>
   )
 }

@@ -1,9 +1,9 @@
 'use client'
 
-import RichTexts from '@/src/components/atoms/notion/RichText/richTexts'
-import styles from './toggleBlock.module.scss'
 import { useState } from 'react'
+import RichTexts from '@/src/components/atoms/notion/RichText/richTexts'
 import NotionBlock from '@/src/components/atoms/notion/Block/notionBlock'
+import styles from './toggleBlock.module.scss'
 
 export default function ToggleBlock({ block }: { block: Toggle }) {
   const [isOpen, setOpen] = useState(true)
