@@ -1,0 +1,47 @@
+.toggle {
+  height: 24px;
+  overflow: hidden;
+
+  & > div {
+    display: flex;
+    gap: 4px;
+  }
+
+  &.open {
+    height: auto;
+
+    & .button > svg {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+@media (hover:hover) and (pointer:fine)  {
+  .button:hover {
+    background-color: #DDDDDD;
+  }
+}
+
+.button {
+  width: 20px;
+  height: 20px;
+
+  padding: 0;
+  margin: 0;
+
+  border: none;
+  border-radius: 4px;
+  background: none;
+
+  svg {
+    transition: transform 200ms ease-out;
+    display: block;
+
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.children {
+  padding-left: 16px;
+}

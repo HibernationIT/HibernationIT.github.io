@@ -63,13 +63,13 @@ export default function HeaderBlock({ block }: IProps) {
       ) : (
         <h3 className={NotionColor(header.color)}>{content()}</h3>
       )}
-      <div>
-        {block.has_children
-          ? block.children.map((child, idx) => (
-              <NotionBlock key={idx} block={child} />
-            ))
-          : null}
-      </div>
+      {block.has_children ? (
+        <div>
+          {block.children.map((child, idx) => (
+            <NotionBlock key={idx} block={child} />
+          ))}
+        </div>
+      ) : null}
     </div>
   )
 }

@@ -30,6 +30,7 @@
     "@typescript-eslint/semi": "off",
     "react/jsx-filename-extension": ["warn", { "extensions": [".ts", ".tsx"] }],
     "jsx-a11y/img-redundant-alt": "off",
+    "jsx-a11y/media-has-caption": "off",
     "@next/next/no-img-element": "off",
     "no-nested-ternary": "off",
     "no-useless-catch": "off",

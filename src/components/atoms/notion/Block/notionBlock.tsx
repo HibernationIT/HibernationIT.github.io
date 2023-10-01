@@ -14,6 +14,9 @@ import styles from './notionBlock.module.scss'
 import ParagraphBlock from '@/src/components/atoms/notion/Paragraph/paragraphBlock'
 import QuoteBlock from '@/src/components/atoms/notion/Quote/quoteBlock'
 import TableBlock from '@/src/components/atoms/notion/Table/tableBlock'
+import TodoBlock from '@/src/components/atoms/notion/Todo/todoBlock'
+import ToggleBlock from '@/src/components/atoms/notion/Toggle/toggleBlock'
+import VideoBlock from '@/src/components/atoms/notion/Video/videoBlock'
 
 interface IProps {
   block: Block
@@ -91,6 +94,18 @@ export default function NotionBlock({ block, numbered }: IProps) {
       case 'table': {
         const table = block as Table
         return <TableBlock block={table} />
+      }
+      case 'to_do': {
+        const todo = block as ToDo
+        return <TodoBlock block={todo} />
+      }
+      case 'toggle': {
+        const toggle = block as Toggle
+        return <ToggleBlock block={toggle} />
+      }
+      case 'video': {
+        const video = block as Video
+        return <VideoBlock block={video} />
       }
       default:
         return <div>block</div>

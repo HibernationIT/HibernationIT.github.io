@@ -114,17 +114,17 @@ interface Code extends DefaultBlock {
 
 interface ColumnList extends DefaultBlock {
   type: 'column_list'
-  column_list: {}
+  column_list: object
 }
 
 interface Column extends DefaultBlock {
   type: 'column'
-  column: {}
+  column: object
 }
 
 interface Divider extends DefaultBlock {
   type: 'divider'
-  divider: {}
+  divider: object
 }
 
 interface Equation extends DefaultBlock {
@@ -226,5 +226,5 @@ interface Toggle extends DefaultBlock {
 
 interface Video extends DefaultBlock {
   type: 'video'
-  video: External
+  video: File | External
 }
