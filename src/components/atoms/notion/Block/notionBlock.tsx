@@ -10,13 +10,13 @@ import FileBlock from '@/src/components/atoms/notion/File/fileBlock'
 import HeaderBlock from '@/src/components/atoms/notion/Header/headerBlock'
 import ImageBlock from '@/src/components/atoms/notion/Image/imageBlock'
 import NumberedListItemBlock from '@/src/components/atoms/notion/NumberedListItem/numberedListItemBlock'
-import styles from './notionBlock.module.scss'
 import ParagraphBlock from '@/src/components/atoms/notion/Paragraph/paragraphBlock'
 import QuoteBlock from '@/src/components/atoms/notion/Quote/quoteBlock'
 import TableBlock from '@/src/components/atoms/notion/Table/tableBlock'
 import TodoBlock from '@/src/components/atoms/notion/Todo/todoBlock'
 import ToggleBlock from '@/src/components/atoms/notion/Toggle/toggleBlock'
 import VideoBlock from '@/src/components/atoms/notion/Video/videoBlock'
+import styles from './notionBlock.module.scss'
 
 interface IProps {
   block: Block

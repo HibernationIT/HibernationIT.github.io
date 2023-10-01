@@ -1,6 +1,5 @@
 import { Client } from '@notionhq/client'
 import LogFactory from '@/src/api/common/logger'
-import BookmarkBlock from '@/src/components/atoms/notion/Bookmark/bookmarkBlock'
 
 export default class Notion2Component {
   private client
@@ -15,23 +14,34 @@ export default class Notion2Component {
     const results = await this.getAll(block)
 
     const end = new Date()
-    LogFactory.info(`(notion) delay time: ${end.getTime() - start.getTime()}ms`)
+    LogFactory.info(
+      `(notion) delay get all time: ${end.getTime() - start.getTime()}ms`,
+    )
 
     return results
   }
 
   private async getAll(block: string): Promise<Block[]> {
-    const children: Block[] = await this.getChildren(block)
+    const start = new Date()
 
-    return Promise.all(
+    const children: Block[] = await this.getChildren(block)
+    const results = await Promise.all(
       children.map(async (child: Block) => {
         if (child.has_children) {
+          LogFactory.debug('(notion) need children')
           child.children = await this.getAll(child.id)
           return child
         }
         return child
       }),
     )
+    const end = new Date()
+
+    LogFactory.info(
+      `(notion) delay get children time: ${end.getTime() - start.getTime()}ms`,
+    )
+
+    return results
   }
 
   private async getChildren(block: string): Promise<Block[]> {
@@ -42,7 +52,7 @@ export default class Notion2Component {
     while (more) {
       const children = await this.client.blocks.children.list({
         block_id: cursor,
-        page_size: 50,
+        page_size: 100,
       })
 
       cursor = children.next_cursor || ''

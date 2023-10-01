@@ -1,16 +1,10 @@
-import React from 'react'
-import Header from '@/src/components/templates/common/Header/header'
-import styles from './page.module.scss'
+import React, { Suspense } from 'react'
+import Loading from '@/src/app/(page)/project/[page]/loading'
 
 interface IProps {
   children: React.ReactNode
 }
 
 export default function Layout({ children }: IProps) {
-  return (
-    <main>
-      <Header activePath="project" />
-      <section className={styles.content}>{children}</section>
-    </main>
-  )
+  return <Suspense fallback={<Loading />}>{children}</Suspense>
 }

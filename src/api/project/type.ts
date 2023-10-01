@@ -6,14 +6,6 @@ interface SelectPropertyResponse {
   color: string
 }
 
-export interface Cover {
-  type: 'file'
-  file: {
-    url: string
-    expiry_time: string
-  }
-}
-
 export interface Properties {
   Title: {
     type: 'title'
