@@ -2,7 +2,7 @@ import Search from '@/src/components/atoms/blog/Search/search'
 import Template from '@/src/components/templates/common/Template/template'
 import Chip from '@/src/components/atoms/blog/Chip/chip'
 import { getDatabase, getPages } from '@/src/api/blog/get'
-import { Properties } from '@/src/api/blog/type'
+import { Page } from '@/src/api/blog/type'
 import styles from './page.module.scss'
 
 export default async function Blog({ searchParams }: any) {
@@ -11,7 +11,7 @@ export default async function Blog({ searchParams }: any) {
   const titleValue = searchParams.title || ''
 
   const database = await getDatabase()
-  const properties = database.properties as unknown as Properties
+  const properties = database.properties as unknown as Page
   const tags = properties.tag.multi_select.options
 
   const list = await getPages(searchParams.title, tagsValue)

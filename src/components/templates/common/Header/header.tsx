@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import styles from './header.module.scss'
 
-export default function Header({ activePath }: { activePath: string }) {
+export default function Header({ activePath }: { activePath?: string }) {
   const menuData = [
     { id: 'home', path: '/', name: 'Home' },
     { id: 'project', path: '/project', name: 'Project' },

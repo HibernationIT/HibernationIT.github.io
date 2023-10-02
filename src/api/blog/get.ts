@@ -68,3 +68,18 @@ export async function getPages(title?: string, tags?: string[]) {
 
   return response
 }
+
+export async function getPage(title: string) {
+  const response = await notion.databases.query({
+    database_id: databaseId,
+    filter: {
+      property: 'title',
+      rich_text: {
+        equals: title,
+      },
+    },
+  })
+
+  if (response.results.length) return response.results[0]
+  return null
+}

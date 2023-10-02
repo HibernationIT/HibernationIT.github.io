@@ -6,7 +6,7 @@ export default function Loading() {
   return (
     <>
       <main>
-        <Header activePath="project" />
+        <Header />
         <section className={styles.content}>
           <div className={styles.titleImage} />
           <div className={styles.date} />

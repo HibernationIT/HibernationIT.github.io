@@ -6,5 +6,9 @@ export default function ImageBlock({ block }: { block: Image }) {
       ? block.image.file.url
       : block.image.external.url
 
-  return <img className={styles.image} src={url} alt="image" />
+  return (
+    <div className={styles.image}>
+      <img src={url} alt="image" />
+    </div>
+  )
 }
