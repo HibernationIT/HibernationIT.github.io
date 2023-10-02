@@ -6,18 +6,18 @@ interface IProps {
   href: string
   image: string
   title: string
-  type: 'mobile' | 'backend' | 'frontend'
   description: string
   tags: string[]
+  type: 'mobile' | 'backend' | 'frontend' | undefined
 }
 
 export default function Card({
   href,
   image,
   title,
-  type,
   description,
   tags,
+  type,
 }: IProps) {
   return (
     <Link className={styles.card} href={href}>
@@ -25,12 +25,14 @@ export default function Card({
       <div className={styles.content}>
         <div className={styles.title}>
           <p>{title}</p>
-          <Image
-            src={`/images/project/${type}_icon.svg`}
-            alt="icon"
-            width={20}
-            height={20}
-          />
+          {type !== undefined ? (
+            <Image
+              src={`/images/project/${type}_icon.svg`}
+              alt="icon"
+              width={20}
+              height={20}
+            />
+          ) : undefined}
         </div>
         <p className={styles.description}>{description}</p>
         <div className={styles.tags}>

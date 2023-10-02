@@ -1,0 +1,22 @@
+.chip {
+  padding: 4px 16px;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+
+  border: none;
+  border-radius: 8px;
+  background-color: #EEEEEE;
+
+  &.active {
+    background-color: #CCCCCC;
+  }
+}
+
+@media (hover:hover) and (pointer:fine)  {
+  .chip:hover {
+    background-color: #DDDDDD;
+    cursor: pointer;
+  }
+}

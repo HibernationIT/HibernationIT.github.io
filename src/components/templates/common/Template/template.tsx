@@ -1,4 +1,4 @@
-import Card from '@/src/components/atoms/project/Card/card'
+import Card from '@/src/components/atoms/common/Card/card'
 import {
   DatabaseObjectResponse,
   QueryDatabaseResponse,
@@ -7,10 +7,11 @@ import { Properties } from '@/src/api/project/type'
 import styles from './template.module.scss'
 
 interface IProps {
+  type: 'project' | 'blog'
   list: QueryDatabaseResponse
 }
 
-export default function Template({ list }: IProps) {
+export default function Template({ type, list }: IProps) {
   return (
     <div className={styles.template}>
       {list.results.map((item, idx) => {
@@ -27,12 +28,16 @@ export default function Template({ list }: IProps) {
         return (
           <Card
             key={idx}
-            href={`/project/${properties.title.rich_text[0].plain_text}`}
+            href={`/${type}/${properties.title.rich_text[0].plain_text}`}
             title={properties.Title.title[0].plain_text}
-            type={properties.type.select.name}
             description={properties.description.rich_text[0].plain_text}
             image={url}
             tags={properties.tag.multi_select.map((i) => i.name)}
+            type={
+              properties.type !== undefined
+                ? properties.type.select.name
+                : undefined
+            }
           />
         )
       })}

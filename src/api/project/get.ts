@@ -4,6 +4,8 @@ import notion from '@/src/api/common/notion'
 const databaseId = process.env.NOTION_PROJECT_DATABASE || ''
 
 export async function getPages(type?: 'mobile' | 'frontend' | 'backend') {
+  const start = new Date()
+
   const filter: { and: any[] } = {
     and: [
       {
@@ -31,7 +33,13 @@ export async function getPages(type?: 'mobile' | 'frontend' | 'backend') {
       },
     ],
   })
-  LogFactory.info(`(project > get) length: ${response.results.length}`)
+
+  const end = new Date()
+  LogFactory.info(
+    `(project > getAll) ${end.getTime() - start.getTime()}ms, length: ${
+      response.results.length
+    }`,
+  )
 
   return response
 }
