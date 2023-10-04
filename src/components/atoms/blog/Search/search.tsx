@@ -16,7 +16,6 @@ export default function Search({ initValue, tags }: IProps) {
   }, [initValue])
 
   function search() {
-    console.log(tags)
     document.location.href = `/blog/?title=${value}&tags=${tags.join(',')}`
   }
 

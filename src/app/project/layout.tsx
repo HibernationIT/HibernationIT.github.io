@@ -8,6 +8,15 @@ interface IProps {
   children: React.ReactNode
 }
 
+export function generateMetadata() {
+  return {
+    title: 'projects - Hibernation IT',
+    openGraph: {
+      images: '/images/project/illust.svg',
+    },
+  }
+}
+
 export default function Layout({ children }: IProps) {
   return (
     <main>

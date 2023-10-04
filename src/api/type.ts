@@ -88,3 +88,25 @@ interface IconProperties {
     files: FileType[]
   }
 }
+
+interface DatabaseInfoResponse {
+  object: 'database'
+  title: RichTextProperties[]
+  description: []
+  properties: BlogDatabaseProperties
+}
+
+interface BlogDatabaseProperties {
+  tag: {
+    multi_select: {
+      options: MultiSelectProperties[]
+    }
+  }
+}
+
+interface PageInfoResponse {
+  id: string
+  created_time: string
+  cover: ExternalType | FileType
+  properties: CardProperties
+}

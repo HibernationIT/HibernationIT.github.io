@@ -4,7 +4,6 @@ import NotFound from 'next/dist/client/components/not-found-error'
 import Header from '@/src/components/templates/common/Header/header'
 import format from '@/src/api/common/dateFormat'
 import { DatabaseObjectResponse } from '@notionhq/client/build/src/api-endpoints'
-import { Properties } from '@/src/api/blog/type'
 import { Notion } from '@/src/api/notion'
 import styles from './page.module.scss'
 
@@ -15,11 +14,28 @@ interface IProps {
   params: Params
 }
 
+async function getPage(id: string) {
+  return Notion.getPage('blog', id)
+}
+
+export async function generateMetadata({ params }: IProps) {
+  const page = await getPage(params.page)
+  if (page === null) return {}
+  return {
+    title: `${page.properties.Title.title[0].plain_text} - Hibernation IT`,
+    openGraph: {
+      title: `${page.properties.Title.title[0].plain_text} - Hibernation IT`,
+      description: page.properties.description.rich_text[0].plain_text,
+      images:
+        page.cover.type === 'file'
+          ? page.cover.file.url
+          : page.cover.external.url,
+    },
+  }
+}
+
 export default async function ProjectPage({ params }: IProps) {
-  const page = (await Notion.getPage(
-    'blog',
-    params.page,
-  )) as DatabaseObjectResponse
+  const page = await getPage(params.page)
 
   if (page === null) {
     return <NotFound />
@@ -27,7 +43,7 @@ export default async function ProjectPage({ params }: IProps) {
 
   const blocks = await Notion.getBlocks(page.id)
 
-  const properties = page.properties as unknown as Properties
+  const { properties } = page
   const titleImage =
     (page.cover?.type === 'file'
       ? page.cover?.file.url

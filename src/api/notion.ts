@@ -1,5 +1,5 @@
-import LogFactory from '@/src/api/common/logger'
 import { Client } from '@notionhq/client'
+import LogFactory from '@/src/api/common/logger'
 import Notion2Component from '@/src/api/notion/notion2Component'
 
 export class Notion {
@@ -58,7 +58,7 @@ export class Notion {
     return this.delayCheck(getIcons, 'icon > getAll')
   }
 
-  public static async getBlogDB() {
+  public static async getBlogDB(): Promise<DatabaseInfoResponse> {
     const getBlogDB = () => {
       return this.client.databases.retrieve({ database_id: this.blogDB })
     }
@@ -66,7 +66,10 @@ export class Notion {
     return this.delayCheck(getBlogDB, 'blog > getDB')
   }
 
-  public static async getBlogs(title?: string, tags?: string[]) {
+  public static async getBlogs(
+    title?: string,
+    tags?: string[],
+  ): Promise<DatabaseQueryResponse> {
     const filter: { and: any[] } = {
       and: [this.onlyView],
     }
@@ -94,7 +97,10 @@ export class Notion {
     return this.delayCheck(getBlogs, 'blog > getAll')
   }
 
-  public static async getPage(type: 'project' | 'blog', title: string) {
+  public static async getPage(
+    type: 'project' | 'blog',
+    title: string,
+  ): Promise<PageInfoResponse | null> {
     const getPage = async () => {
       const result = await this.client.databases.query({
         database_id: type === 'project' ? this.projectDB : this.blogDB,
