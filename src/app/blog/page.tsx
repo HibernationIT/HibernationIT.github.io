@@ -1,7 +1,7 @@
 import Search from '@/src/components/atoms/blog/Search/search'
 import Template from '@/src/components/templates/common/Template/template'
 import Chip from '@/src/components/atoms/blog/Chip/chip'
-import { getDatabase, getPages } from '@/src/api/blog/get'
+import { Notion } from '@/src/api/notion'
 import { Page } from '@/src/api/blog/type'
 import styles from './page.module.scss'
 
@@ -10,11 +10,11 @@ export default async function Blog({ searchParams }: any) {
     searchParams.tags !== undefined ? searchParams.tags.split(',') : []
   const titleValue = searchParams.title || ''
 
-  const database = await getDatabase()
+  const database = await Notion.getBlogDB()
   const properties = database.properties as unknown as Page
   const tags = properties.tag.multi_select.options
 
-  const list = await getPages(searchParams.title, tagsValue)
+  const list = await Notion.getBlogs(searchParams.title, tagsValue)
 
   return (
     <>

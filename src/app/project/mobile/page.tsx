@@ -1,9 +1,9 @@
 import Nav from '@/src/components/templates/project/Nav/nav'
 import Template from '@/src/components/templates/common/Template/template'
-import { getPages } from '@/src/api/project/get'
+import { Notion } from '@/src/api/notion'
 
 export default async function ProjectMobile() {
-  const list = await getPages('mobile')
+  const list = await Notion.getProjects('mobile')
 
   return (
     <>

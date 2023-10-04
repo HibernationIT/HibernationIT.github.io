@@ -1,5 +1,4 @@
 import { Client } from '@notionhq/client'
-import LogFactory from '@/src/api/common/logger'
 
 export default class Notion2Component {
   private client
@@ -9,39 +8,20 @@ export default class Notion2Component {
   }
 
   public async getBlocks(block: string): Promise<Block[]> {
-    const start = new Date()
-
-    const results = await this.getAll(block)
-
-    const end = new Date()
-    LogFactory.info(
-      `(notion) delay get all time: ${end.getTime() - start.getTime()}ms`,
-    )
-
-    return results
+    return this.getAll(block)
   }
 
   private async getAll(block: string): Promise<Block[]> {
-    const start = new Date()
-
     const children: Block[] = await this.getChildren(block)
-    const results = await Promise.all(
+    return Promise.all(
       children.map(async (child: Block) => {
         if (child.has_children) {
-          LogFactory.debug('(notion) need children')
           child.children = await this.getAll(child.id)
           return child
         }
         return child
       }),
     )
-    const end = new Date()
-
-    LogFactory.info(
-      `(notion) delay get children time: ${end.getTime() - start.getTime()}ms`,
-    )
-
-    return results
   }
 
   private async getChildren(block: string): Promise<Block[]> {

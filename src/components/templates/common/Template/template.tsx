@@ -1,29 +1,22 @@
 import Card from '@/src/components/atoms/common/Card/card'
-import {
-  DatabaseObjectResponse,
-  QueryDatabaseResponse,
-} from '@notionhq/client/build/src/api-endpoints'
-import { Properties } from '@/src/api/project/type'
 import styles from './template.module.scss'
 
 interface IProps {
   type: 'project' | 'blog'
-  list: QueryDatabaseResponse
+  list: DatabaseQueryResponse
 }
 
 export default function Template({ type, list }: IProps) {
   return (
     <div className={styles.template}>
       {list.results.map((item, idx) => {
-        const value = item as DatabaseObjectResponse
-        const coverObject = value.cover as File | External
-
+        const value = item
         const url =
-          coverObject.type === 'file'
-            ? coverObject.file.url
-            : coverObject.external.url
+          value.cover.type === 'file'
+            ? value.cover.file.url
+            : value.cover.external.url
 
-        const properties = value.properties as unknown as Properties
+        const properties = value.properties as CardProperties
 
         return (
           <Card

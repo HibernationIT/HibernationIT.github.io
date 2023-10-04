@@ -1,10 +1,10 @@
 import Header from '@/src/components/templates/common/Header/header'
 import Template from '@/src/components/templates/icon/template/template'
-import { getIcons } from '@/src/api/icon/get'
+import { Notion } from '@/src/api/notion'
 import styles from './page.module.scss'
 
 export default async function Icon() {
-  const list = await getIcons()
+  const list = await Notion.getIcons()
 
   return (
     <main>
