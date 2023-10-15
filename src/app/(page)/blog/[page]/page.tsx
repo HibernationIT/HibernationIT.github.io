@@ -1,11 +1,10 @@
 import Image from 'next/image'
-import NotionTemplate from '@/src/components/templates/notion/notionTemplate'
 import NotFound from 'next/dist/client/components/not-found-error'
 import Header from '@/src/components/templates/common/Header/header'
 import format from '@/src/api/common/dateFormat'
-import { DatabaseObjectResponse } from '@notionhq/client/build/src/api-endpoints'
 import { Notion } from '@/src/api/notion'
 import styles from './page.module.scss'
+import PageTemplate from '@/src/components/templates/page/pageTemplate'
 
 interface Params {
   page: string
@@ -73,7 +72,7 @@ export default async function ProjectPage({ params }: IProps) {
               <span key={idx}>{tag}</span>
             ))}
         </div>
-        <NotionTemplate blocks={blocks} />
+        <PageTemplate blocks={blocks} />
       </section>
     </main>
   )
