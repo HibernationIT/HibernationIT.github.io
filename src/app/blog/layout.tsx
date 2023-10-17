@@ -1,6 +1,5 @@
 import Header from '@/src/components/templates/common/Header/header'
-import React, { Suspense } from 'react'
-import Loading from '@/src/app/blog/loading'
+import React from 'react'
 import Image from 'next/image'
 import styles from '@/src/app/blog/page.module.scss'
 
@@ -29,7 +28,7 @@ export default async function Layout({ children }: IProps) {
           width={1200}
           height={260}
         />
-        <Suspense fallback={<Loading />}>{children}</Suspense>
+        {children}
       </section>
     </main>
   )

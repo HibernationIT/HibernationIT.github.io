@@ -1,9 +1,9 @@
 import Nav from '@/src/components/templates/project/Nav/nav'
+import Project from '@/src/common/project'
 import Template from '@/src/components/templates/common/Template/template'
-import { Notion } from '@/src/api/notion'
 
-export default async function Project() {
-  const list = await Notion.getProjects()
+export default function Page() {
+  const list = Project.getAllPosts()
 
   return (
     <>

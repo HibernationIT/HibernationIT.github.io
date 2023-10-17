@@ -1,12 +1,14 @@
 .content {
   position: relative;
+  left: 50%;
+  translate: -50% 0;
 
   width: 1200px;
   height: 700px;
 
   div {
     position: absolute;
-    transition: all 500ms ease;
+    transition: all 200ms ease;
   }
 
   div:nth-of-type(1) {

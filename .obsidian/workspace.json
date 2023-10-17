@@ -1,0 +1,194 @@
+{
+  "main": {
+    "id": "ccd9fc167d7689f7",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e9da195d1967ff8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "256f2aad6e10fa85",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/HibernationIT/project/agricultural-product-price-inquiry-application.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "54568afa0a286081",
+    "type": "split",
+    "children": [
+      {
+        "id": "fb1c4c153114bfc1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f2dfb255bf775eb9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5ff7b5b2c3105ae5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "dec21f31989c64bf",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "28d25f57fac01426",
+    "type": "split",
+    "children": [
+      {
+        "id": "abaff311c345d4a9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4ab217142152dea3",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "src/HibernationIT/project/agricultural-product-price-inquiry-application.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5c5233514121db75",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "src/HibernationIT/project/agricultural-product-price-inquiry-application.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "27e0f45ff25534b7",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "23c26293d426441c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "src/HibernationIT/project/agricultural-product-price-inquiry-application.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "obsidian-projects:Open projects": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "256f2aad6e10fa85",
+  "lastOpenFiles": [
+    "src/components/templates/common/Content/content.tsx",
+    "src/components/templates/common/Content/content.module.scss",
+    "src/components/templates/common/Content/Content.tsx",
+    "src/components/templates/common/Content",
+    "src/components/templates/project/Template/template.tsx",
+    "src/components/templates/project/Template/template.module.scss",
+    "src/components/templates/project/Template",
+    "src/common/type/project.ts~",
+    "node_modules/moment/src/lib/utils/to-int.js",
+    "node_modules/moment/src/lib/utils/zero-fill.js",
+    "node_modules/moment/src/lib/utils/mod.js",
+    "node_modules/moment/CHANGELOG.md",
+    "node_modules/moment/README.md",
+    "public/project/agricultural-product-price-inquiry-application/image1.png",
+    "public/project/agricultural-product-price-inquiry-application/image1.png",
+    "src/HibernationIT/project/agricultural-product-price-inquiry-application.md",
+    "public/project/agricultural-product-price-inquiry-application/image2.png",
+    "node_modules/react-markdown/readme.md",
+    "node_modules/style-to-object/README.md",
+    "node_modules/remark-rehype/readme.md",
+    "node_modules/inline-style-parser/README.md",
+    "node_modules/inline-style-parser/CHANGELOG.md",
+    "node_modules/html-url-attributes/readme.md",
+    "node_modules/hast-util-to-jsx-runtime/readme.md",
+    "node_modules/web-namespaces/readme.md",
+    "node_modules/vfile-location/readme.md",
+    "node_modules/stringify-entities/readme.md",
+    "node_modules/remark-html/readme.md",
+    "node_modules/parse5/README.md",
+    "node_modules/html-void-elements/readme.md",
+    "node_modules/hastscript/readme.md",
+    "node_modules/hast-util-to-parse5/readme.md",
+    "node_modules/hast-util-sanitize/readme.md",
+    "node_modules/hast-util-to-html/readme.md",
+    "node_modules/hast-util-parse-selector/readme.md",
+    "node_modules/hast-util-from-parse5/readme.md",
+    "node_modules/hast-util-raw/readme.md",
+    "node_modules/character-entities-legacy/readme.md",
+    "node_modules/character-entities-html4/readme.md",
+    "public/project/agricultural-product-price-inquiry-application/title.png",
+    "image1.png"
+  ]
+}

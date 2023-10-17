@@ -1,0 +1,94 @@
+{
+  "version": 2,
+  "projects": [
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "src/HibernationIT/project",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "fieldConfig": {
+              "name": {
+                "hide": false,
+                "width": 409
+              },
+              "path": {
+                "hide": true
+              },
+              "created_dt": {
+                "hide": true
+              },
+              "image": {
+                "hide": true
+              },
+              "tags": {
+                "hide": true
+              },
+              "title": {
+                "hide": true
+              },
+              "type": {
+                "hide": true
+              }
+            }
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "6b6e43da-b82c-4f8f-8980-130db236cc0e",
+          "name": "Table",
+          "type": "table"
+        },
+        {
+          "config": {
+            "coverField": "image",
+            "includeFields": [
+              "title",
+              "created_dt",
+              "tags"
+            ]
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "c939b052-7a9b-4956-9bf0-edf9f3b9fff3",
+          "name": "project",
+          "type": "gallery"
+        }
+      ],
+      "id": "c89baede-e50d-4364-a064-e45650032467",
+      "name": "project"
+    }
+  ],
+  "preferences": {
+    "projectSizeLimit": 1000,
+    "frontmatter": {
+      "quoteStrings": "PLAIN"
+    },
+    "commands": [],
+    "linkBehavior": "open-editor"
+  }
+}

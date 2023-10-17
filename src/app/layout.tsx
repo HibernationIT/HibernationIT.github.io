@@ -3,7 +3,6 @@ import './globals.scss'
 import type { Metadata } from 'next'
 import { Noto_Sans_KR } from 'next/font/google'
 import React from 'react'
-import { TemplateString } from 'next/dist/lib/metadata/types/metadata-types'
 
 const notoSansKR = Noto_Sans_KR({ subsets: ['latin'] })
 

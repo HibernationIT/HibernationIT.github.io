@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import styles from './card.module.scss'
 
@@ -21,17 +20,12 @@ export default function Card({
 }: IProps) {
   return (
     <Link className={styles.card} href={href}>
-      <Image src={image} alt="image" width={354} height={236} />
+      <img src={image} alt="image" width={354} height={236} />
       <div className={styles.content}>
         <div className={styles.title}>
           <p>{title}</p>
           {type !== undefined ? (
-            <Image
-              src={`/images/project/${type}_icon.svg`}
-              alt="icon"
-              width={20}
-              height={20}
-            />
+            <img src={`/images/project/${type}_icon.svg`} alt="icon" />
           ) : undefined}
         </div>
         <p className={styles.description}>{description}</p>
