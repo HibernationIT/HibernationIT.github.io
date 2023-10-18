@@ -1,13 +1,20 @@
 import React from 'react'
+import { Metadata } from 'next'
 import Project from '@/src/common/project'
-import styles from './page.module.scss'
 import Content from '@/src/components/templates/common/Content/content'
+import styles from './page.module.scss'
 
 interface Params {
   page: string
 }
 interface IProps {
   params: Params
+}
+
+export const generateStaticParams = async () => {
+  return Project.getAllPosts().map((post) => ({
+    page: post.id,
+  }))
 }
 
 export default function Page({ params }: IProps) {

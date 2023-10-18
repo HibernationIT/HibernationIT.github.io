@@ -1,9 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import Icon from '@/src/common/icon'
-import styles from './card.module.scss'
 import { download } from '@/src/common/download'
+import styles from './card.module.scss'
 
 interface IProps {
   name: string

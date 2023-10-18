@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import styles from './type.module.scss'
 
 interface IProps {
@@ -15,7 +14,7 @@ export default function Type({ children, href, src, active }: IProps) {
       className={`${styles.button} ${active ? styles.active : ''}`}
       href={href}
     >
-      <Image src={src} alt="icon" width={32} height={32} />
+      <img src={src} alt="icon" />
       <span>{children}</span>
     </Link>
   )

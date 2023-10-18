@@ -2,7 +2,8 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  trailingSlash: true,
+  output: 'export',
+  exportTrailingSlash: true,
   images: {
     dangerouslyAllowSVG: true,
     remotePatterns: [

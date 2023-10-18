@@ -6,6 +6,7 @@ import styles from './page.module.scss'
 export default async function Blog({ searchParams }: any) {
   return (
     <>
+      blog!
       <div className={styles.searchBox}>
         {/* <Search initValue={titleValue} tags={tagsValue} /> */}
         {/* <div className={styles.tagBox}> */}

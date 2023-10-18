@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import styles from './card.module.scss'
 
@@ -27,7 +26,7 @@ export default function Card({ children, href, src, type }: IProps) {
         <div>
           <span>{children}</span>
         </div>
-        <Image src={src} alt="image" width={10} height={10} />
+        <img src={src} alt="image" />
       </Link>
     </div>
   )

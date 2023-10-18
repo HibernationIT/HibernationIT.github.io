@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import styles from './header.module.scss'
 
 export default function Header({ activePath }: { activePath?: string }) {
@@ -14,7 +13,7 @@ export default function Header({ activePath }: { activePath?: string }) {
 
   return (
     <header className={styles.header}>
-      <Image src="/images/logo.svg" alt="logo" width={282} height={30} />
+      <img src="/images/logo.svg" alt="logo" />
       <ul>
         {menuData.map((menu, idx) => {
           return (

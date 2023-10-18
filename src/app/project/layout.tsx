@@ -1,6 +1,5 @@
-import React, { Suspense } from 'react'
+import React from 'react'
 import Header from '@/src/components/templates/common/Header/header'
-import Image from 'next/image'
 import styles from '@/src/app/project/page.module.scss'
 
 interface IProps {
@@ -21,12 +20,10 @@ export default function Layout({ children }: IProps) {
     <main>
       <Header activePath="project" />
       <section>
-        <Image
+        <img
           className={styles.title}
           src="/images/project/illust.svg"
           alt="illust"
-          width={1200}
-          height={260}
         />
       </section>
       {children}
