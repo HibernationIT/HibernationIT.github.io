@@ -3,7 +3,7 @@ tags:
   - NextJS
   - typescript
 title: 농산물 시세 조회 애플리케이션
-created_dt: 2023-10-15
+created_dt: 2023-04-20
 image: "[[title.png]]"
 type: mobile
 view: true
@@ -14,7 +14,6 @@ view: true
 
 ## 사용한 API
 ---
-### Site!
 
 [농산물유통정보:::KAMIS](https://www.kamis.or.kr/customer/reference/openapi_list.do)
 
@@ -23,4 +22,5 @@ view: true
 ## 인 앱 화면
 ---
 ![image1](image1.png)
+
 ![image2.png](image2.png)

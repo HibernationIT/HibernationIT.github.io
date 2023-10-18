@@ -11,8 +11,21 @@
   background-color: #FFFFFF;
   box-shadow: 0 8px 16px 0 rgba(112, 144, 176, 0.2);
 
-  & > img {
+  & > button {
+    padding: 0;
+
+    width: 64px;
+    height: 56px;
+
+    background: none;
+    border: none;
+
     margin-bottom: 8px;
+
+    & > img {
+      width: 48px;
+      height: 48px;
+    }
   }
   & > p {
     text-align: center;

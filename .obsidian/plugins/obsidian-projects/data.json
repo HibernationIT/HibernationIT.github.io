@@ -10,12 +10,34 @@
       "dataSource": {
         "kind": "folder",
         "config": {
-          "path": "src/HibernationIT/project",
+          "path": "HibernationIT/project",
           "recursive": false
         }
       },
       "newNotesFolder": "",
       "views": [
+        {
+          "config": {
+            "coverField": "image",
+            "includeFields": [
+              "title",
+              "created_dt",
+              "tags"
+            ]
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "c939b052-7a9b-4956-9bf0-edf9f3b9fff3",
+          "name": "project",
+          "type": "gallery"
+        },
         {
           "config": {
             "fieldConfig": {
@@ -55,15 +77,30 @@
           "id": "6b6e43da-b82c-4f8f-8980-130db236cc0e",
           "name": "Table",
           "type": "table"
-        },
+        }
+      ],
+      "id": "c89baede-e50d-4364-a064-e45650032467",
+      "name": "project"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "HibernationIT/icon",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
         {
           "config": {
-            "coverField": "image",
-            "includeFields": [
-              "title",
-              "created_dt",
-              "tags"
-            ]
+            "coverField": "svg",
+            "cardWidth": 200
           },
           "filter": {
             "conditions": []
@@ -74,13 +111,28 @@
           "sort": {
             "criteria": []
           },
-          "id": "c939b052-7a9b-4956-9bf0-edf9f3b9fff3",
-          "name": "project",
+          "id": "2b1ad15a-cfc4-45e0-b646-f69645abcf75",
+          "name": "Icons",
           "type": "gallery"
+        },
+        {
+          "config": {},
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "f8dcdbac-fbf0-44af-b0e3-263cb579df77",
+          "name": "Table",
+          "type": "table"
         }
       ],
-      "id": "c89baede-e50d-4364-a064-e45650032467",
-      "name": "project"
+      "id": "3d8ff5bb-793a-42d9-bf74-a9ae763f0efc",
+      "name": "icon"
     }
   ],
   "preferences": {

@@ -4,7 +4,7 @@ import { Metadata, Post, Preview } from '@/src/common/type/project'
 import moment from 'moment'
 
 export default class Project {
-  private static BASE_PATH = './src/HibernationIT/project'
+  private static BASE_PATH = './HibernationIT/project'
 
   public static getAllPosts(type?: string): Preview[] {
     const files = fs.readdirSync(this.BASE_PATH)
