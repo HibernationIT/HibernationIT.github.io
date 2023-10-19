@@ -1,0 +1,163 @@
+{
+  "main": {
+    "id": "ef92f3b9fd9f2579",
+    "type": "split",
+    "children": [
+      {
+        "id": "d92faf7c887e7de7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ed4aca5b68b6930d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "project/agricultural-product-price-inquiry-application.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "38633ca7df54af50",
+            "type": "leaf",
+            "state": {
+              "type": "obsidian-projects",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "278567070e4e2b40",
+    "type": "split",
+    "children": [
+      {
+        "id": "de6be4ea47a02a9e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b58811962a7904c9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4b2919387c304143",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b4ed7484571b6cc6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c8e0785d20a0e61f",
+    "type": "split",
+    "children": [
+      {
+        "id": "fdbc9b5d6ce3d995",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "97921ae3d9c921d6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "project/agricultural-product-price-inquiry-application.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e0a056af8d93b8ff",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "project/agricultural-product-price-inquiry-application.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c1e1307827f7349f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "3767e834eeaa6dcb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "project/agricultural-product-price-inquiry-application.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:퀵 스위처 열기": false,
+      "obsidian-projects:Open projects": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 데일리 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false
+    }
+  },
+  "active": "ed4aca5b68b6930d",
+  "lastOpenFiles": [
+    "project/agricultural-product-price-inquiry-application.md",
+    "무제 파일.canvas"
+  ]
+}

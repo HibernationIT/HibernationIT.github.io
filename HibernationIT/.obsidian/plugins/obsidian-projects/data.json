@@ -10,7 +10,7 @@
       "dataSource": {
         "kind": "folder",
         "config": {
-          "path": "HibernationIT/project",
+          "path": "project",
           "recursive": false
         }
       },
@@ -18,12 +18,7 @@
       "views": [
         {
           "config": {
-            "coverField": "image",
-            "includeFields": [
-              "title",
-              "created_dt",
-              "tags"
-            ]
+            "coverField": "image"
           },
           "filter": {
             "conditions": []
@@ -34,85 +29,8 @@
           "sort": {
             "criteria": []
           },
-          "id": "c939b052-7a9b-4956-9bf0-edf9f3b9fff3",
+          "id": "899b4db0-e980-4f23-84cc-7158aad02797",
           "name": "project",
-          "type": "gallery"
-        },
-        {
-          "config": {
-            "fieldConfig": {
-              "name": {
-                "hide": false,
-                "width": 409
-              },
-              "path": {
-                "hide": true
-              },
-              "created_dt": {
-                "hide": true
-              },
-              "image": {
-                "hide": true
-              },
-              "tags": {
-                "hide": true
-              },
-              "title": {
-                "hide": true
-              },
-              "type": {
-                "hide": true
-              }
-            }
-          },
-          "filter": {
-            "conditions": []
-          },
-          "colors": {
-            "conditions": []
-          },
-          "sort": {
-            "criteria": []
-          },
-          "id": "6b6e43da-b82c-4f8f-8980-130db236cc0e",
-          "name": "Table",
-          "type": "table"
-        }
-      ],
-      "id": "c89baede-e50d-4364-a064-e45650032467",
-      "name": "project"
-    },
-    {
-      "fieldConfig": {},
-      "defaultName": "",
-      "templates": [],
-      "excludedNotes": [],
-      "isDefault": false,
-      "dataSource": {
-        "kind": "folder",
-        "config": {
-          "path": "HibernationIT/icon",
-          "recursive": false
-        }
-      },
-      "newNotesFolder": "",
-      "views": [
-        {
-          "config": {
-            "coverField": "svg",
-            "cardWidth": 200
-          },
-          "filter": {
-            "conditions": []
-          },
-          "colors": {
-            "conditions": []
-          },
-          "sort": {
-            "criteria": []
-          },
-          "id": "2b1ad15a-cfc4-45e0-b646-f69645abcf75",
-          "name": "Icons",
           "type": "gallery"
         },
         {
@@ -126,12 +44,64 @@
           "sort": {
             "criteria": []
           },
-          "id": "f8dcdbac-fbf0-44af-b0e3-263cb579df77",
+          "id": "8e9a9d77-e7d2-4233-97a8-7adf88fb320d",
           "name": "Table",
           "type": "table"
         }
       ],
-      "id": "3d8ff5bb-793a-42d9-bf74-a9ae763f0efc",
+      "id": "d33938ba-f68f-473a-ac96-2a0f30df28a8",
+      "name": "project"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "icon",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "coverField": "svg",
+            "cardWidth": 180
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "0c14b6db-7fd4-439f-86a5-f52e05950ca6",
+          "name": "icon",
+          "type": "gallery"
+        },
+        {
+          "config": {},
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "1faab498-9b60-4f1f-8942-490b5276d418",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "085800cf-b41d-40dd-8019-3c3ae9aa2360",
       "name": "icon"
     }
   ],
