@@ -4,23 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d92faf7c887e7de7",
+        "id": "ab141a70fbd38dc9",
         "type": "tabs",
         "children": [
           {
-            "id": "ed4aca5b68b6930d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "project/agricultural-product-price-inquiry-application.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "38633ca7df54af50",
+            "id": "fd2ea5fde8238c00",
             "type": "leaf",
             "state": {
               "type": "obsidian-projects",
@@ -93,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "project/agricultural-product-price-inquiry-application.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "project/agricultural-product-price-inquiry-application.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "project/agricultural-product-price-inquiry-application.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -155,9 +139,17 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "ed4aca5b68b6930d",
+  "active": "fd2ea5fde8238c00",
   "lastOpenFiles": [
+    "blog/docker-build-from-error-getting-credentials.md",
+    "docker-build-from-error-getting-credentials.png.md",
     "project/agricultural-product-price-inquiry-application.md",
+    "images/blog/docker-build-from-error-getting-credentials/docker-build-from-error-getting-credentials.png",
+    "images/project/agricultural-product-price-inquiry-application/agricultural-product-price-inquiry-application.png",
+    "images/blog/docker-build-from-error-getting-credentials/image1.svg",
+    "images/project/agricultural-product-price-inquiry-application/image1.png",
+    "images/blog/docker-build-from-error-getting-credentials",
+    "images/blog",
     "무제 파일.canvas"
   ]
 }

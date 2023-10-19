@@ -16,6 +16,9 @@ yarn.lock
 
 # production
 /build
+/public/project
+/public/icon
+/public/blog
 
 # misc
 .DS_Store

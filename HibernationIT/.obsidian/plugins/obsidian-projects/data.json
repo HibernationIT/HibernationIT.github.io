@@ -103,6 +103,57 @@
       ],
       "id": "085800cf-b41d-40dd-8019-3c3ae9aa2360",
       "name": "icon"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "blog",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "coverField": "image"
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "8a274f8a-cc91-4947-b509-e671a13dc92a",
+          "name": "blog",
+          "type": "gallery"
+        },
+        {
+          "config": {},
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "f751c76d-9643-43ee-8c9c-a830ad1ef3e9",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "0335a364-026a-4f22-b9f1-0a1f5a029dbf",
+      "name": "blog"
     }
   ],
   "preferences": {

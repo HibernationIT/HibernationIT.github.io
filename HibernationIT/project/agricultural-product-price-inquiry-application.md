@@ -4,7 +4,7 @@ tags:
   - typescript
 title: 농산물 시세 조회 애플리케이션
 created_dt: 2023-04-20
-image: "[[title.png]]"
+image: "[[agricultural-product-price-inquiry-application.png]]"
 type: mobile
 view: true
 ---
