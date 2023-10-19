@@ -18,8 +18,5 @@ jobs:
           yarn build && touch ./out/.nojekyll
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
-          folder: out
+        run: |
+          yarn deploy
