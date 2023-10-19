@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "cp -r HibernationIT/images/* public && next dev",
-    "build": "cp -r HibernationIT/images/* public && next build && touch out/.nojekyll",
+    "build": "cp -r HibernationIT/images/* public && next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "gh-pages -d out --dotfiles"
+    "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "better-react-mathjax": "^2.0.2",
