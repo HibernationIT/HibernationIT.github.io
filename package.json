@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "cp -r HibernationIT/images/* public && next dev",
-    "build": "cp -r HibernationIT/images/* public && next build",
+    "build": "cp -r HibernationIT/images/* public && next build && touch out/.nojekyll",
     "start": "next start",
     "lint": "next lint",
     "deploy": "gh-pages -d out --dotfiles"
