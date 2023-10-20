@@ -10,7 +10,7 @@ export function generateMetadata() {
   return {
     title: 'blog - Hibernation IT',
     openGraph: {
-      images: '/images/blog/illust.svg',
+      images: 'https://hibernationit.github.io/images/blog/illust.svg',
     },
   }
 }
@@ -25,8 +25,8 @@ export default async function Layout({ children }: IProps) {
           src="/images/blog/illust.svg"
           alt="illust"
         />
-        {children}
       </section>
+      {children}
     </main>
   )
 }

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: 'Hibernation IT',
     description:
       'Hibernation IT 홈페이지 | 개발 | 포트폴리오 | 블로그 | 개발자 | 풀스택 | 프론트엔드 | 백엔드 |',
-    images: '/images/logo.svg',
+    images: 'https://hibernationit.github.io/images/logo.svg',
   },
 }
 

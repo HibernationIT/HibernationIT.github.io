@@ -9,8 +9,11 @@ interface IProps {
 export function generateMetadata() {
   return {
     title: 'projects - Hibernation IT',
+    description: '지금까지 만들어본 개발 프로젝트들을 소개합니다.',
     openGraph: {
-      images: '/images/project/illust.svg',
+      title: 'projects - Hibernation IT',
+      description: '지금까지 만들어본 개발 프로젝트들을 소개합니다.',
+      images: 'https://hibernationit.github.io/images/project/illust.svg',
     },
   }
 }

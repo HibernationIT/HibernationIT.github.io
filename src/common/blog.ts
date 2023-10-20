@@ -1,26 +1,25 @@
-import * as fs from 'fs'
+import { Post, Metadata, Preview } from '@/src/common/type/blog'
 import matter from 'gray-matter'
-import { Metadata, Post, Preview } from '@/src/common/type/project'
+import * as fs from 'fs'
 import moment from 'moment'
 
-export default class Project {
-  private static BASE_PATH = './HibernationIT/project'
+export default class Blog {
+  private static BASE_PATH = './HibernationIT/blog'
 
-  public static getAllPosts(type?: string): Preview[] {
+  public static getAllPosts(): Preview[] {
     const files = fs.readdirSync(this.BASE_PATH)
-    let posts = files.map((file) => {
-      const mdFile = fs.readFileSync(`${this.BASE_PATH}/${file}`, 'utf-8')
-      const md = matter(mdFile)
-      const metadata = md.data as Metadata
-      return {
-        ...this.parsingMetadata(metadata),
-        id: file.replace('.md', ''),
-        description: this.sliceContent(md.content),
-      } as Preview
-    })
-
-    if (type) posts = posts.filter((meta) => meta.type === type)
-    return posts.filter((meta) => meta.view)
+    return files
+      .map((file) => {
+        const mdFile = fs.readFileSync(`${this.BASE_PATH}/${file}`, 'utf-8')
+        const md = matter(mdFile)
+        const metadata = md.data as Metadata
+        return {
+          ...this.parsingMetadata(metadata),
+          id: file.replace('.md', ''),
+          description: this.sliceContent(md.content),
+        }
+      })
+      .filter((meta) => meta.view)
   }
 
   public static getPost(post: string): Post {
@@ -42,7 +41,6 @@ export default class Project {
       title: data.title,
       created_dt: moment(data.created_dt),
       image: data.image.replace('[[', '').replace(']]', ''),
-      type: data.type,
       view: data.view,
     }
   }

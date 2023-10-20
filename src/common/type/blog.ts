@@ -5,7 +5,6 @@ export interface Metadata {
   title: string
   created_dt: Moment
   image: string
-  type: string
   view: boolean
 }
 
@@ -15,7 +14,6 @@ export interface Preview {
   title: string
   created_dt: Moment
   image: string
-  type: 'mobile' | 'frontend' | 'backend'
   view: boolean
   description: string
 }

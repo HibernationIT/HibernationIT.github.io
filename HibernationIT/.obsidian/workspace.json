@@ -11,8 +11,12 @@
             "id": "fd2ea5fde8238c00",
             "type": "leaf",
             "state": {
-              "type": "obsidian-projects",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "blog/docker-build-from-error-getting-credentials.md",
+                "mode": "preview",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "blog/docker-build-from-error-getting-credentials.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "blog/docker-build-from-error-getting-credentials.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "blog/docker-build-from-error-getting-credentials.md"
+              }
             }
           }
         ]
@@ -141,10 +149,10 @@
   },
   "active": "fd2ea5fde8238c00",
   "lastOpenFiles": [
-    "blog/docker-build-from-error-getting-credentials.md",
-    "docker-build-from-error-getting-credentials.png.md",
-    "project/agricultural-product-price-inquiry-application.md",
     "images/blog/docker-build-from-error-getting-credentials/docker-build-from-error-getting-credentials.png",
+    "docker-build-from-error-getting-credentials.png.md",
+    "blog/docker-build-from-error-getting-credentials.md",
+    "project/agricultural-product-price-inquiry-application.md",
     "images/project/agricultural-product-price-inquiry-application/agricultural-product-price-inquiry-application.png",
     "images/blog/docker-build-from-error-getting-credentials/image1.svg",
     "images/project/agricultural-product-price-inquiry-application/image1.png",

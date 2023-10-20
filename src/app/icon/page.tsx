@@ -7,8 +7,7 @@ export default async function Page() {
   const list = Icon.getAllIcons()
 
   return (
-    <main>
-      <Header activePath="icon" />
+    <>
       <section>
         <h1 className={styles.title}>Icons</h1>
         <p className={styles.description}>
@@ -19,6 +18,6 @@ export default async function Page() {
       <section>
         <Template list={list} />
       </section>
-    </main>
+    </>
   )
 }

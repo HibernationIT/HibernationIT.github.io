@@ -11,14 +11,32 @@ interface IProps {
   params: Params
 }
 
+function getData(page: string) {
+  return Project.getPost(`${page}.md`)
+}
+
 export const generateStaticParams = async () => {
   return Project.getAllPosts().map((post) => ({
     page: post.id,
   }))
 }
 
+export function generateMetadata({ params }: IProps) {
+  const post = getData(params.page)
+
+  return {
+    title: `${params.page} - Hibernation IT`,
+    description: post.description,
+    openGraph: {
+      title: `${params.page} - Hibernation IT`,
+      description: post.description,
+      images: `https://hibernationit.github.io/project/${params.page}/${post.data.image}`,
+    },
+  }
+}
+
 export default function Page({ params }: IProps) {
-  const post = Project.getPost(`${params.page}.md`)
+  const post = getData(params.page)
 
   return (
     <main className={styles.main}>
