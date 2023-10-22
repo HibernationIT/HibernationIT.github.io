@@ -1,5 +1,5 @@
 import React from 'react'
-import Project from '@/src/common/project'
+import Blog from '@/src/common/blog'
 import Content from '@/src/components/templates/common/Content/content'
 import styles from './page.module.scss'
 
@@ -11,11 +11,11 @@ interface IProps {
 }
 
 function getData(page: string) {
-  return Project.getPost(`${page}.md`)
+  return Blog.getPost(`${page}.md`)
 }
 
 export const generateStaticParams = async () => {
-  return Project.getAllPosts().map((post) => ({
+  return Blog.getAllPosts().map((post) => ({
     page: post.id,
   }))
 }
@@ -29,7 +29,7 @@ export function generateMetadata({ params }: IProps) {
     openGraph: {
       title: `${params.page} - Hibernation IT`,
       description: post.description,
-      images: `https://hibernationit.github.io/project/${params.page}/${post.data.image}`,
+      images: `https://hibernationit.github.io/blog/${params.page}/${post.data.image}`,
     },
   }
 }
@@ -50,7 +50,6 @@ export default function Page({ params }: IProps) {
         </h3>
         <div className={styles.title}>
           <h1>{post.data.title}</h1>
-          <img src={`/images/project/${post.data.type}_icon.svg`} alt="icon" />
         </div>
         <div className={styles.chips}>
           {post.data.tags.map((tag, key) => (

@@ -1,10 +1,11 @@
 import Card from '@/src/components/atoms/common/Card/card'
 import { Preview as Project } from '@/src/common/type/project'
+import { Preview as Blog } from '@/src/common/type/blog'
 import styles from './template.module.scss'
 
 interface IProps {
   type: 'project' | 'blog'
-  list: Project[]
+  list: Project[] | Blog[]
 }
 
 export default function Template({ type, list }: IProps) {
@@ -19,7 +20,7 @@ export default function Template({ type, list }: IProps) {
             description={item.description}
             image={`/${type}/${item.id}/${item.image}`}
             tags={item.tags}
-            type={type === 'project' ? item.type : undefined}
+            type={'type' in item ? item.type : undefined}
           />
         )
       })}

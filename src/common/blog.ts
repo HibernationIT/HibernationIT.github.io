@@ -6,9 +6,9 @@ import moment from 'moment'
 export default class Blog {
   private static BASE_PATH = './HibernationIT/blog'
 
-  public static getAllPosts(): Preview[] {
+  public static getAllPosts(title?: string, tags?: string[]): Preview[] {
     const files = fs.readdirSync(this.BASE_PATH)
-    return files
+    let posts = files
       .map((file) => {
         const mdFile = fs.readFileSync(`${this.BASE_PATH}/${file}`, 'utf-8')
         const md = matter(mdFile)
@@ -20,6 +20,16 @@ export default class Blog {
         }
       })
       .filter((meta) => meta.view)
+
+    if (title) {
+      posts = posts.filter((post) => post.title.includes(title))
+    }
+    if (tags) {
+      tags.forEach((tag) => {
+        posts = posts.filter((post) => post.tags.includes(tag))
+      })
+    }
+    return posts
   }
 
   public static getPost(post: string): Post {
@@ -49,6 +59,7 @@ export default class Blog {
     return content
       .replaceAll('#', '')
       .replaceAll('---', '')
+      .replaceAll('```', '')
       .replaceAll('\n', ' ')
       .slice(0, 50)
       .concat('...')

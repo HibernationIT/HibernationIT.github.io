@@ -20,7 +20,7 @@ export default function Card({
 }: IProps) {
   return (
     <Link className={styles.card} href={href}>
-      <img src={image} alt="image" width={354} height={236} />
+      <img src={image} alt="image" />
       <div className={styles.content}>
         <div className={styles.title}>
           <p>{title}</p>

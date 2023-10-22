@@ -1,54 +1,71 @@
 .content {
+  overflow-x: hidden;
   padding-bottom: 48px;
 
-  h1 {
-    padding: 24px 0 16px 0;
-    font-size: 32px;
+  & > h1 {
+    margin: 36px 0 24px 0;
+    font-size: 28px;
     font-weight: 500;
   }
-  h2 {
-    padding: 20px 0 8px 0;
+  & > h2 {
+    margin: 24px 0 16px 0;
     font-size: 24px;
     font-weight: 500;
   }
-  h3 {
-    padding: 16px 0 8px 0;
+  & > h3 {
+    margin: 24px 0 4px 0;
     font-size: 20px;
     font-weight: 500;
   }
-  hr {
+  & > h4 {
+    margin: 18px 0 8px 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  & > hr {
     margin: 16px 0;
     padding: 0;
     border: none;
     border-bottom: 1px solid #DDDDDD;
   }
-  p {
+  & > p {
+    padding: 8px 0;
+
     font-size: 16px;
-    line-height: 28px;
+    line-height: 24px;
   }
-  img {
+  & > img {
     max-width: 100%;
   }
-  a {
+  & > a {
     color: #A35EC3;
   }
-  .link {
-    display: block;
-    padding: 8px 16px;
+  & > ul > li {
+    input[type="checkbox"] {
+      accent-color: #a35ec3;
+      pointer-events: none;
+    }
+  }
+  & > blockquote {
+    margin: 8px 0;
 
-    color: #000000;
-    text-decoration: none;
-
-    width: 100%;
-    border: 1px solid #DDDDDD;
-    border-radius: 8px;
-
-    .content {
-      p:first-child {
-        font-size: 18px;
-        font-weight: 500;
-      }
-      padding: 0;
+    border-left: 2px solid #a35ec3;
+    padding: 4px 0 4px 20px;
+    p {
+      line-height: 20px;
+    }
+  }
+  & > table {
+    text-align: left;
+    line-height: 20px;
+    th {
+      font-weight: 500;
+      padding: 6px 8px;
+      border: 1px solid #dddddd;
+    }
+    td {
+      padding: 6px 8px;
+      border: 1px solid #dddddd;
     }
   }
 }

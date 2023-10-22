@@ -51,6 +51,7 @@ export default class Project {
     return content
       .replaceAll('#', '')
       .replaceAll('---', '')
+      .replaceAll('```', '')
       .replaceAll('\n', ' ')
       .slice(0, 50)
       .concat('...')
