@@ -1,3 +1,3 @@
-export default function About() {
-  return <section></section>
+export default function Page() {
+  return <section>about!</section>
 }
