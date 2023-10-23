@@ -1,9 +1,8 @@
 import Blog from '@/src/common/blog'
-import Template from '@/src/components/templates/common/Template/template'
-import styles from './page.module.scss'
+import Content from '@/src/components/templates/blog/Content/content'
 
 export default function Page() {
   const list = Blog.getAllPosts()
 
-  return <Template type="blog" list={list} />
+  return <Content list={list} />
 }
