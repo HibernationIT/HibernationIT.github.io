@@ -14,9 +14,9 @@ export default function Content({ list }: { list: Preview[] }) {
   }, [list, search])
 
   return (
-    <div className={styles.content}>
+    <section className={styles.content}>
       <Search value={search} onChange={(e) => setSearch(e.target.value)} />
       <Template type="blog" list={data} />
-    </div>
+    </section>
   )
 }
