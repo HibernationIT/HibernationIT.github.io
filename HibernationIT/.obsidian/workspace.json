@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "438575b7cd8a523f",
+        "id": "8092a06d2061dcc4",
         "type": "tabs",
         "children": [
           {
-            "id": "de7aa7df70c19839",
+            "id": "d3dd3b937c3f262c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/docker-build-from-error-getting-credentials.md",
+                "file": "project/game-develop-group-homepage.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "c8e0785d20a0e61f",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/docker-build-from-error-getting-credentials.md",
+                "file": "project/game-develop-group-homepage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/docker-build-from-error-getting-credentials.md",
+                "file": "project/game-develop-group-homepage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/docker-build-from-error-getting-credentials.md"
+                "file": "project/game-develop-group-homepage.md"
               }
             }
           }
@@ -148,9 +147,13 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "de7aa7df70c19839",
+  "active": "d3dd3b937c3f262c",
   "lastOpenFiles": [
+    "images/project/game-develop-group-homepage/image1.png",
+    "images/project/game-develop-group-homepage/game-develop-group-homepage.png",
+    "images/project/game-develop-group-homepage",
     "project/agricultural-product-price-inquiry-application.md",
+    "project/game-develop-group-homepage.md",
     "blog/docker-build-from-error-getting-credentials.md",
     "images/blog/docker-build-from-error-getting-credentials/docker-build-from-error-getting-credentials.png",
     "docker-build-from-error-getting-credentials.png.md",

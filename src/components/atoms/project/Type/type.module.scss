@@ -34,11 +34,16 @@
 
 .active {
   border-style: solid;
+  border-width: 2.5px;
+
+  span {
+    font-weight: 700;
+  }
 }
 
 @media (hover:hover) and (pointer:fine) {
   .button:hover {
-    background-color: #F2ECF4;
+    background-color: #FCF5FF;
   }
 }
 

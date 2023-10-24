@@ -53,7 +53,7 @@ export default class Project {
       .replaceAll('---', '')
       .replaceAll('```', '')
       .replaceAll('\n', ' ')
-      .slice(0, 50)
+      .slice(0, 90)
       .concat('...')
   }
 }

@@ -1,9 +1,13 @@
 .profile {
   display: flex;
   gap: 32px;
+
+  margin-bottom: 74px;
   img {
     width: 200px;
     height: 200px;
+
+    transition: transform 250ms ease-in-out;
   }
   div {
     width: 100%;
@@ -38,4 +42,27 @@
       text-decoration: none;
     }
   }
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .profile > img:hover {
+    transform: perspective(1000px) rotateY(30deg);
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 46px;
+
+  margin-bottom:48px;
+}
+.subTitle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+
+  margin-bottom: 32px;
 }
