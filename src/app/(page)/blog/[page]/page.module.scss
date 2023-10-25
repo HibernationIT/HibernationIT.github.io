@@ -67,7 +67,22 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .main .titleImg {
-    height: 160px;
+  .main {
+    .titleImg {
+      height: 160px;
+    }
+    .title {
+      h1 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        color: #120024;
+      }
+
+      img {
+        width: 36px;
+        height: 36px;
+      }
+    }
   }
 }

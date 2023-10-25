@@ -13,7 +13,15 @@
 
   text-align: center;
   font-size: 16px;
+  word-break: keep-all;
   line-height: 24px;
 
   border-bottom: 1px solid #DDDDDD;
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 28px;
+    line-height: 32px;
+  }
 }

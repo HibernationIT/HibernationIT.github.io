@@ -9,8 +9,12 @@ interface IProps {
 export function generateMetadata() {
   return {
     title: 'blog - Hibernation IT',
+    description:
+      '공부하면서 정리한 내용을 올리거나, 정보 공유하는 페이지입니다.',
     openGraph: {
       images: 'https://hibernationit.github.io/images/blog/illust.svg',
+      description:
+        '공부하면서 정리한 내용을 올리거나, 정보 공유하는 페이지입니다.',
     },
   }
 }
