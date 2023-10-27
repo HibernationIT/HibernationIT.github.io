@@ -34,12 +34,16 @@
     font-size: 16px;
     line-height: 24px;
 
-    & > img {
+    img {
       max-width: 100%;
     }
 
-    & > a {
+    a {
       color: #A35EC3;
+    }
+
+    strong {
+      font-weight: bold;
     }
   }
   & > ul > li {

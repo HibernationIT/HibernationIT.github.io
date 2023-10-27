@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Icon - Hibernation IT',
     description: '직접 디자인한 아이콘들을 소개합니다.',
-    images: 'https://hibernationit.github.io/images/logo.svg',
+    images: 'https://hibernationit.github.io/images/title.svg',
   },
 }
 

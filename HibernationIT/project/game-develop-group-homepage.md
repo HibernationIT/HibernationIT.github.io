@@ -1,7 +1,7 @@
 ---
 tags:
   - NextJS
-  - typescript
+  - TypeScript
 title: 성일 정보 고등학교 동아리 페이지
 created_dt: 2023-06-13
 image: "[[game-develop-group-homepage.png]]"

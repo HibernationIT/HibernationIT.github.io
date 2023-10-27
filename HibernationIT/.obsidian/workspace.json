@@ -8,18 +8,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d3dd3b937c3f262c",
+            "id": "058017dc77e5b926",
+            "type": "leaf",
+            "state": {
+              "type": "obsidian-projects",
+              "state": {}
+            }
+          },
+          {
+            "id": "f81638b2a0f89687",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "project/game-develop-group-homepage.md",
+                "file": "project/notion2component.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "project/game-develop-group-homepage.md",
+                "file": "project/notion2component.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "project/game-develop-group-homepage.md",
+                "file": "project/notion2component.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "project/game-develop-group-homepage.md"
+                "file": "project/notion2component.md"
               }
             }
           }
@@ -147,13 +156,20 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "d3dd3b937c3f262c",
+  "active": "f81638b2a0f89687",
   "lastOpenFiles": [
+    "project/agricultural-product-price-inquiry-application.md",
+    "project/notion2component.md",
+    "images/project/notion2component/notion2component.png",
+    "images/project/notion2component/image1.png",
+    "project/game-develop-group-homepage.md",
+    "images/project/notion2component",
+    "images/project/n.md",
+    "icon/bold.md",
+    "icon/italic.md",
     "images/project/game-develop-group-homepage/image1.png",
     "images/project/game-develop-group-homepage/game-develop-group-homepage.png",
     "images/project/game-develop-group-homepage",
-    "project/agricultural-product-price-inquiry-application.md",
-    "project/game-develop-group-homepage.md",
     "blog/docker-build-from-error-getting-credentials.md",
     "images/blog/docker-build-from-error-getting-credentials/docker-build-from-error-getting-credentials.png",
     "docker-build-from-error-getting-credentials.png.md",

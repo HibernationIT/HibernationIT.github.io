@@ -27,7 +27,13 @@
             "conditions": []
           },
           "sort": {
-            "criteria": []
+            "criteria": [
+              {
+                "field": "created_dt",
+                "order": "desc",
+                "enabled": true
+              }
+            ]
           },
           "id": "899b4db0-e980-4f23-84cc-7158aad02797",
           "name": "project",

@@ -20,6 +20,7 @@ export default class Blog {
         }
       })
       .filter((meta) => meta.view)
+      .sort((a, b) => b.created_dt.diff(a.created_dt))
 
     if (title) {
       posts = posts.filter((post) => post.title.includes(title))

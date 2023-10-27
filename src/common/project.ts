@@ -21,6 +21,7 @@ export default class Project {
         } as Preview
       })
       .filter((meta) => meta.view)
+      .sort((a, b) => b.created_dt.diff(a.created_dt))
   }
 
   public static getPost(post: string): Post {
@@ -53,7 +54,8 @@ export default class Project {
       .replaceAll('---', '')
       .replaceAll('```', '')
       .replaceAll('\n', ' ')
-      .slice(0, 90)
+      .replaceAll('`', '')
+      .slice(0, 85)
       .concat('...')
   }
 }
