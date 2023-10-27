@@ -1,10 +1,12 @@
-import Header from '@/src/components/templates/common/Header/header'
+import Illust from '@/src/common/illust'
+import Template from '@/src/components/templates/illust/template/template'
 
-export default function Illust() {
+export default function Page() {
+  const photos = Illust.getAllImages()
+
   return (
-    <main>
-      <Header activePath="illust" />
-      <div>illust</div>
-    </main>
+    <section>
+      <Template photos={photos} />
+    </section>
   )
 }

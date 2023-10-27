@@ -160,6 +160,58 @@
       ],
       "id": "0335a364-026a-4f22-b9f1-0a1f5a029dbf",
       "name": "blog"
+    },
+    {
+      "fieldConfig": {},
+      "defaultName": "",
+      "templates": [],
+      "excludedNotes": [],
+      "isDefault": false,
+      "dataSource": {
+        "kind": "folder",
+        "config": {
+          "path": "illust",
+          "recursive": false
+        }
+      },
+      "newNotesFolder": "",
+      "views": [
+        {
+          "config": {
+            "coverField": "src",
+            "fitStyle": "contain"
+          },
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "11ced2d2-084a-4123-9df7-86c65fbc6148",
+          "name": "Illust",
+          "type": "gallery"
+        },
+        {
+          "config": {},
+          "filter": {
+            "conditions": []
+          },
+          "colors": {
+            "conditions": []
+          },
+          "sort": {
+            "criteria": []
+          },
+          "id": "a29e5c27-2114-4e3f-885d-46845520d4ee",
+          "name": "Table",
+          "type": "table"
+        }
+      ],
+      "id": "c2328027-d326-45d9-a1b7-2bba412d6289",
+      "name": "illust"
     }
   ],
   "preferences": {
