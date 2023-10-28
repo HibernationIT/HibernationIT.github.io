@@ -8,27 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "2ad578560284f259",
-            "type": "leaf",
-            "state": {
-              "type": "obsidian-projects",
-              "state": {}
-            }
-          },
-          {
-            "id": "509aa768f4ca6500",
+            "id": "ac65ccb54a7e045e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "illust/error.md",
+                "file": "blog/framework-library-module-package.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "illust/error.md",
+                "file": "blog/framework-library-module-package.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "illust/error.md",
+                "file": "blog/framework-library-module-package.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "illust/error.md"
+                "file": "blog/framework-library-module-package.md"
               }
             }
           }
@@ -148,23 +139,29 @@
   "left-ribbon": {
     "hiddenItems": {
       "switcher:퀵 스위처 열기": false,
-      "obsidian-projects:Open projects": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
       "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false
+      "command-palette:명령어 팔레트 열기": false,
+      "obsidian-projects:Open projects": false
     }
   },
-  "active": "509aa768f4ca6500",
+  "active": "ac65ccb54a7e045e",
   "lastOpenFiles": [
+    "blog/docker-build-from-error-getting-credentials.md",
+    "blog/framework-library-module-package.md",
+    "images/blog/framework-library-module-package/framework-library-module-package.png",
+    "images/blog/framework-library-module-package",
+    "images/blog/무제 파일.md",
+    "blog/무제 파일.md",
+    "illust/error.md",
     "illust/nodata.md",
     "illust/blog-about.md",
     "illust/blog-blog.md",
     "illust/blog-icon.md",
     "illust/blog-illust.md",
     "illust/blog-project.md",
-    "illust/error.md",
     "images/illust/blog-project.svg",
     "images/illust/blog-illust.svg",
     "images/illust/blog-blog.svg",
@@ -184,9 +181,7 @@
     "images/project/n.md",
     "icon/bold.md",
     "icon/italic.md",
-    "images/project/game-develop-group-homepage/image1.png",
     "images/project/game-develop-group-homepage",
-    "blog/docker-build-from-error-getting-credentials.md",
     "docker-build-from-error-getting-credentials.png.md",
     "images/blog/docker-build-from-error-getting-credentials",
     "images/blog",
