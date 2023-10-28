@@ -1,7 +1,7 @@
 1:HC["/",""]
 2:HL["/_next/static/css/b5b8005bf485ced7.css","style"]
 3:HL["/_next/static/css/99df9567277836c0.css","style"]
-0:["-YhraV9xLIpC46be8F3H0",[[["",{"children":["icon",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L4",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b5b8005bf485ced7.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99df9567277836c0.css","precedence":"next"}]],"$L5"]]]]
+0:["X_LJbfrQX0tW1a5jDB5P1",[[["",{"children":["icon",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L4",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b5b8005bf485ced7.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/99df9567277836c0.css","precedence":"next"}]],"$L5"]]]]
 6:HL["/_next/static/css/700d4176d8f7c8e3.css","style"]
 7:HL["/_next/static/css/13b86ad719afc056.css","style"]
 8:I{"id":1443,"chunks":["272:static/chunks/webpack-0e1d8c38a108e488.js","971:static/chunks/fd9d1056-22249b5849022fd7.js","864:static/chunks/864-70ebad4d880e1f3b.js"],"name":"","async":false}
