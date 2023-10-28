@@ -51,7 +51,7 @@ export default class Blog {
       tags: data.tags,
       title: data.title,
       created_dt: moment(data.created_dt),
-      image: data.image.replace('[[', '').replace(']]', ''),
+      image: data.image?.replace('[[', '').replace(']]', ''),
       view: data.view,
     }
   }

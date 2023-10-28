@@ -35,4 +35,4 @@ view: true
 
 ---
 
-![image1](image1.png)
+![image1](notion2component-1.png)

@@ -18,5 +18,5 @@ view: true
 
 ---
 
-![image1](image1.png)
+![image1](game-develop-group-homepage-1.png)
 

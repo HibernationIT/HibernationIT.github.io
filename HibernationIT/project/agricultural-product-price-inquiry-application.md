@@ -19,6 +19,6 @@ view: true
 
 ## 인 앱 화면
 ---
-![image1](image1.png)
+![image1](agricultural-product-price-inquiry-application-1.png)
 
-![image2](image2.png)
+![image2](agricultural-product-price-inquiry-application-2.png)

@@ -2,33 +2,37 @@
   overflow-x: hidden;
   padding-bottom: 48px;
 
-  & > h1 {
+  strong {
+    font-weight: bold;
+  }
+
+  h1 {
     margin: 36px 0 24px 0;
     font-size: 28px;
     font-weight: 500;
   }
-  & > h2 {
+  h2 {
     margin: 24px 0 16px 0;
     font-size: 24px;
     font-weight: 500;
   }
-  & > h3 {
+  h3 {
     margin: 24px 0 4px 0;
     font-size: 20px;
     font-weight: 500;
   }
-  & > h4 {
+  h4 {
     margin: 18px 0 8px 0;
     font-size: 18px;
     font-weight: 500;
   }
-  & > hr {
+  hr {
     margin: 16px 0;
     padding: 0;
     border: none;
     border-bottom: 1px solid #DDDDDD;
   }
-  & > p {
+  p {
     padding: 8px 0;
 
     font-size: 16px;
@@ -41,18 +45,20 @@
     a {
       color: #A35EC3;
     }
-
-    strong {
-      font-weight: bold;
-    }
   }
-  & > ul > li {
+  ul > li {
+    margin-left: 24px;
+    padding: 8px 0;
+
+    font-size: 16px;
+    line-height: 24px;
+
     input[type="checkbox"] {
       accent-color: #a35ec3;
       pointer-events: none;
     }
   }
-  & > blockquote {
+  blockquote {
     margin: 8px 0;
 
     border-left: 2px solid #a35ec3;
@@ -61,7 +67,7 @@
       line-height: 20px;
     }
   }
-  & > table {
+  table {
     text-align: left;
     line-height: 20px;
     th {
@@ -73,5 +79,24 @@
       padding: 6px 8px;
       border: 1px solid #dddddd;
     }
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+  ul ul {
+    list-style-type: circle;
+  }
+  ul ul ul {
+    list-style-type: square;
+  }
+  ul ul ul ul {
+    list-style-type: disc;
+  }
+  ul ul ul ul ul {
+    list-style-type: circle;
+  }
+  ul ul ul ul ul ul {
+    list-style-type: square;
   }
 }

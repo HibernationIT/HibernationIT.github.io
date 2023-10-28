@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "61008289ed62ea6d",
+        "id": "d15be29d7a3b5caf",
         "type": "tabs",
         "children": [
           {
-            "id": "a2640903c65014d2",
+            "id": "5e42c23a78ab26b3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c8e0785d20a0e61f",
@@ -86,7 +87,7 @@
               "type": "backlink",
               "state": {
                 "file": "blog/framework-library-module-package.md",
-                "collapseAll": true,
+                "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -134,7 +135,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -147,17 +149,23 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "a2640903c65014d2",
+  "active": "5e42c23a78ab26b3",
   "lastOpenFiles": [
-    "images/blog/framework-library-module-package/image1.png",
-    "2023-10-28.md",
+    "project/0.default.md",
+    "blog/0.default.md",
     "blog/framework-library-module-package.md",
-    "images/project/notion2component/image1.png",
     "blog/docker-build-from-error-getting-credentials.md",
+    "images/blog/framework-library-module-package/framework-library-module-package-2.png",
+    "project/notion2component.md",
+    "project/game-develop-group-homepage.md",
+    "project/agricultural-product-price-inquiry-application.md",
+    "images/blog/docker-build-from-error-getting-credentials/docker-build-from-error-getting-credentials.png",
+    "images/blog/framework-library-module-package/framework-library-module-package-1.png",
+    "2023-10-28.md",
+    "images/project/notion2component/notion2component-1.png",
     "images/blog/framework-library-module-package/framework-library-module-package.png",
     "images/blog/framework-library-module-package",
     "images/blog/무제 파일.md",
-    "blog/무제 파일.md",
     "illust/error.md",
     "illust/nodata.md",
     "illust/blog-about.md",
@@ -170,14 +178,9 @@
     "images/illust/blog-blog.svg",
     "images/illust/blog-about.svg",
     "images/illust/blog-icon.svg",
-    "images/illust/nodata.svg",
-    "images/illust/error.svg",
     "images/illust",
     "무제 파일.md",
     "illust",
-    "project/notion2component.md",
-    "project/agricultural-product-price-inquiry-application.md",
-    "project/game-develop-group-homepage.md",
     "images/project/notion2component",
     "images/project/n.md",
     "icon/bold.md",

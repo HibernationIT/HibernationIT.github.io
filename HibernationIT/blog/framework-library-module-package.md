@@ -1,10 +1,11 @@
 ---
-created_dt: 2023-05-02
-image: "[[framework-library-module-package.png]]"
 tags:
   - Programing
   - Develop
 title: 프레임워크, 라이브러리, 모듈, 패키지 개념 정리
+crated_dt: 2023-05-02
+image: "[[framework-library-module-package.png]]"
+view: true
 ---
 프레임워크(Framework)와 라이브러리(Library)의 정확한 개념을 정리하고, 이 둘의 차이를 조금 더 확실하게 알기 위해서 다시한번 정리한 내용입니다.
 
@@ -18,7 +19,7 @@ title: 프레임워크, 라이브러리, 모듈, 패키지 개념 정리
 > 
 > 복잡한 문제를 해결하거나 서술하는 데 사용되는 기본 개념 구조이다.
 > 
-> - 위키백과 -
+> -위키백과-
 
 ### 간단 정의
 
@@ -39,7 +40,7 @@ title: 프레임워크, 라이브러리, 모듈, 패키지 개념 정리
 > 
 > 소프트웨어를 개발할 때 컴퓨터 프로그램이 사용하는 비휘발성 자원의 모임이다.
 > 
-> - 위키백과 -
+> -위키백과-
 
 ### 간단 정의
 
@@ -60,4 +61,29 @@ title: 프레임워크, 라이브러리, 모듈, 패키지 개념 정리
 
 ### 프레임워크와 라이브러리의 차이점
 
-![](images/blog/framework-library-module-package/image1.png)
+![image1](framework-library-module-package-1.png)
+
+- **프레임워크**
+	- 애플리케이션의 전체적인 **흐름을 주도**
+	- **내가 작성한 코드**를 프레임워크가 호출함으로써 작동
+- **라이브러리**
+	- 애플리케이션에서 **필요한 경우**에 호출하여 사용
+	- **내 코드**에서 라이브러리를 호출함으로써 사용
+
+## 모듈(Module)과 패키지(Package)와 라이브러리
+
+---
+
+![image2](framework-library-module-package-2.png)
+
+### 모듈(Module)?
+
+- **함수, 변수, 클래스**를 모아놓은 것
+
+### 패키지(Package)?
+
+- 특정 기능과 관련된 **여러 모듈**을 모아놓은 한 폴더
+
+### 라이브러리?
+
+- **패키지**와 **모듈**을 모아놓은 것
