@@ -18,8 +18,17 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5963bce15f3bb875",
+            "type": "leaf",
+            "state": {
+              "type": "obsidian-projects",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -69,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c8e0785d20a0e61f",
@@ -85,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/framework-library-module-package.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +111,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/framework-library-module-package.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +132,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "blog/framework-library-module-package.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -147,10 +153,10 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "ac65ccb54a7e045e",
+  "active": "b58811962a7904c9",
   "lastOpenFiles": [
-    "blog/docker-build-from-error-getting-credentials.md",
     "blog/framework-library-module-package.md",
+    "blog/docker-build-from-error-getting-credentials.md",
     "images/blog/framework-library-module-package/framework-library-module-package.png",
     "images/blog/framework-library-module-package",
     "images/blog/무제 파일.md",
