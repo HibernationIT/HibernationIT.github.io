@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "8092a06d2061dcc4",
+        "id": "61008289ed62ea6d",
         "type": "tabs",
         "children": [
           {
-            "id": "ac65ccb54a7e045e",
+            "id": "a2640903c65014d2",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -18,17 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "5963bce15f3bb875",
-            "type": "leaf",
-            "state": {
-              "type": "obsidian-projects",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -78,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "c8e0785d20a0e61f",
@@ -95,7 +85,8 @@
             "state": {
               "type": "backlink",
               "state": {
-                "collapseAll": false,
+                "file": "blog/framework-library-module-package.md",
+                "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
@@ -111,8 +102,9 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "blog/framework-library-module-package.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -132,15 +124,17 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "blog/framework-library-module-package.md"
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -153,9 +147,12 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "b58811962a7904c9",
+  "active": "a2640903c65014d2",
   "lastOpenFiles": [
+    "images/blog/framework-library-module-package/image1.png",
+    "2023-10-28.md",
     "blog/framework-library-module-package.md",
+    "images/project/notion2component/image1.png",
     "blog/docker-build-from-error-getting-credentials.md",
     "images/blog/framework-library-module-package/framework-library-module-package.png",
     "images/blog/framework-library-module-package",
@@ -180,8 +177,6 @@
     "illust",
     "project/notion2component.md",
     "project/agricultural-product-price-inquiry-application.md",
-    "images/project/notion2component/notion2component.png",
-    "images/project/notion2component/image1.png",
     "project/game-develop-group-homepage.md",
     "images/project/notion2component",
     "images/project/n.md",
