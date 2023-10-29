@@ -6,7 +6,7 @@ tags:
 title: "[2] 스프링의 기본 아키텍트 (Data & Web)"
 crated_dt: 2023-06-13
 image: "[[spring-basic-architect-data-web.png]]"
-view: false
+view: true
 ---
 스프링과 스프링 부트에 대해 천천히 개념 정리하며 공부하기 위한 포스팅입니다.
 
@@ -86,4 +86,30 @@ view: false
 
 ## Servlet
 
-- 웹 프로그래밍에서 클라이언트 요청을 
+- 웹 프로그래밍에서 클라이언트 요청을 처리하고, 처리 결과를 클라이언트에 전송하는 기술
+
+### 특징
+
+- 클라이언트 요청에 대해 동적으로 작동하는 웹 어플리케이션 컴포넌트
+- html을 사용하여 요청에 응답
+- iava thread를 통해서 동작
+- Controller로 이용
+- HTTP 프로토콜 서비스를 지원하는 HttpServlet 클래스 사용
+- HTML 변경 시 Servlet의 재컴파일이 필요
+
+### 동작
+
+![image5](spring-basic-architect-data-web-5.png)
+
+1. 사용자의 HTTP Request가 서블릿 컨테이너로 전송
+2. 서블릿 컨테이너는 `HttpServeletRequest`, `HttpServletResponse` 두 객체를 생성
+3. web.xml은 사용자가 요청한 URL을 통해 어느 서블릿에 요청한 것인지 체킹
+4. 해당 서블릿에서 service 메소드를 호출한 후 클라이언트의 요청 종류에 따라 doGet 같은 메소드 호출
+5. doGet 메소드는 동적 페이지를 생성한 후 `HttpServletResponse`객체에 응답을 전송
+6. 응답이 끝나면 두 객체 `HttpServletRequest`, `HttpServletResponse`를 삭제
+
+## Portlet
+
+- 웹 페이지 안에 있는 작은 창
+- 포탈 페이지 내에서 자유롭게 배치하는 웹 컴포넌트
+- 재사용이 가능한 웹 구성요소
