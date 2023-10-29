@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "cp -r HibernationIT/images/* public && next dev",
-    "build": "cp -r HibernationIT/images/* public && next build",
+    "dev": "cp -r HibernationIT/0.images/* public && next dev",
+    "build": "cp -r HibernationIT/0.images/* public && next build",
     "start": "next start",
     "lint": "next lint",
     "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
