@@ -3,7 +3,7 @@ tags:
   - Programing
   - Develop
 title: 프레임워크, 라이브러리, 모듈, 패키지 개념 정리
-crated_dt: 2023-05-02
+created_dt: 2023-05-02
 image: "[[framework-library-module-package.png]]"
 view: true
 ---

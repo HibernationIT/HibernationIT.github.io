@@ -4,7 +4,7 @@ tags:
   - SpringBoot
   - Java
 title: "[1] 스프링? 스프링 부트? 개념 정리"
-crated_dt: 2023-04-28
+created_dt: 2023-04-28
 image: "[[spring-springboot.png]]"
 view: true
 ---

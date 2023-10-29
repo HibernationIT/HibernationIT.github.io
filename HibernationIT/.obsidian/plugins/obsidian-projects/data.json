@@ -127,7 +127,12 @@
       "views": [
         {
           "config": {
-            "coverField": "image"
+            "coverField": "image",
+            "includeFields": [
+              "title",
+              "crated_dt",
+              "created_dt"
+            ]
           },
           "filter": {
             "conditions": []

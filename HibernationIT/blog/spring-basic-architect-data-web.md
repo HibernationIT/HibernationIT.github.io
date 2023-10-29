@@ -4,7 +4,7 @@ tags:
   - SpringBoot
   - Java
 title: "[2] 스프링의 기본 아키텍트 (Data & Web)"
-crated_dt: 2023-06-13
+created_dt: 2023-06-13
 image: "[[spring-basic-architect-data-web.png]]"
 view: true
 ---
