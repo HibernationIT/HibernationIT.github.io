@@ -13,10 +13,18 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/spring-springboot-1.md",
+                "file": "blog/spring-basic-architect-data-web.md",
                 "mode": "source",
                 "source": false
               }
+            }
+          },
+          {
+            "id": "ec64803092eb723f",
+            "type": "leaf",
+            "state": {
+              "type": "obsidian-projects",
+              "state": {}
             }
           }
         ]
@@ -85,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/spring-springboot-1.md",
+                "file": "blog/spring-basic-architect-data-web.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/spring-springboot-1.md",
+                "file": "blog/spring-basic-architect-data-web.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -125,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/spring-springboot-1.md"
+                "file": "blog/spring-basic-architect-data-web.md"
               }
             }
           }
@@ -148,28 +156,33 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "bd8c9952846cd9dc",
+  "active": "b58811962a7904c9",
   "lastOpenFiles": [
-    "0.images/blog/spring-springboot-1/spring-springboot-1-3.png",
-    "0.images/blog/spring-springboot-1/spring-springboot-1-2.png",
+    "0.images/blog/spring-basic-architect-data-web/spring-basic-architect-data-web-4.png",
+    "0.images/blog/spring-basic-architect-data-web/spring-basic-architect-data-web-3.png",
+    "blog/spring-basic-architect-data-web.md",
+    "0.images/blog/spring-basic-architect-data-web/spring-basic-architect-data-web-2.png",
+    "blog/spring-springboot.md",
+    "blog/framework-library-module-package.md",
+    "0.images/blog/spring-basic-architect-data-web/spring-basic-architect-data-web-1.png",
+    "0.images/blog/spring-springboot/spring-springboot-3.png",
+    "0.images/blog/spring-springboot/spring-springboot-1.png",
+    "0.images/blog/spring-springboot/spring-springboot-2.png",
+    "0.images/blog/spring-basic-architect-data-web/spring-basic-architect-data-web.png",
+    "0.images/blog/spring-springboot/spring-springboot.png",
+    "0.images/blog/spring-basic-architect-data-web",
+    "blog/0.default.md",
+    "spring-springboot-1-3.png.md",
     "0.images/blog/framework-library-module-package/framework-library-module-package-1.png",
-    "0.images/blog/spring-springboot-1/spring-springboot-1-1.png",
     "0.images/blog/framework-library-module-package/framework-library-module-package.png",
-    "blog/spring-springboot-1.md",
-    "0.images/blog/spring-springboot-1/spring-springboot-1.png",
-    "0.images/blog/spring-springboot-1",
+    "0.images/blog/spring-springboot",
     "0.images/blog/무제 파일.md",
     "project/notion2component.md",
     "project/game-develop-group-homepage.md",
     "project/agricultural-product-price-inquiry-application.md",
-    "blog/0.default.md",
     "blog/docker-build-from-error-getting-credentials.md",
     "project/0.default.md",
-    "blog/framework-library-module-package.md",
-    "0.images/blog/framework-library-module-package/framework-library-module-package-2.png",
-    "0.images/blog/docker-build-from-error-getting-credentials/docker-build-from-error-getting-credentials.png",
     "2023-10-28.md",
-    "0.images/project/notion2component/notion2component-1.png",
     "0.images/blog/framework-library-module-package",
     "images/blog/무제 파일.md",
     "illust/error.md",
@@ -179,8 +192,6 @@
     "illust/blog-icon.md",
     "illust/blog-illust.md",
     "illust/blog-project.md",
-    "0.images/illust/blog-project.svg",
-    "0.images/illust/blog-illust.svg",
     "0.images/illust",
     "무제 파일.md",
     "illust",
@@ -189,7 +200,6 @@
     "icon/bold.md",
     "icon/italic.md",
     "0.images/project/game-develop-group-homepage",
-    "docker-build-from-error-getting-credentials.png.md",
     "0.images/blog/docker-build-from-error-getting-credentials",
     "0.images/blog",
     "무제 파일.canvas"

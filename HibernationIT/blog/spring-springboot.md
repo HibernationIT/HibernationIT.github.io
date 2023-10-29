@@ -5,7 +5,7 @@ tags:
   - Java
 title: "[1] 스프링? 스프링 부트? 개념 정리"
 crated_dt: 2023-04-28
-image: "[[spring-springboot-1.png]]"
+image: "[[spring-springboot.png]]"
 view: true
 ---
 스프링과 스프링 부트에 대해 천천히 개념 정리하며 공부하기 위한 포스팅입니다.
@@ -16,7 +16,7 @@ view: true
 
 ## 1. 스프링이란?
 
-![image1](spring-springboot-1-1.png)
+![image1](spring-springboot-1.png)
 
 ### Spring?
 
@@ -41,7 +41,7 @@ view: true
 
 ## 1. 스프링 부트란?
 
-![image2](spring-springboot-1-2.png)
+![image2](spring-springboot-2.png)
 
 ### Spring Boot?
 
@@ -56,7 +56,7 @@ view: true
 
 ---
 
-![image3](spring-springboot-1-3.png)
+![image3](spring-springboot-3.png)
 
 ### Spring 모듈 종류?
 
