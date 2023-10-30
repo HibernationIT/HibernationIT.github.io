@@ -46,25 +46,25 @@ view: true
 
 ### AOP 주요 개념
 
-- Aspect
+- **Aspect**
 	
 	반복되는 코드 ( 로직 )을 모듈화 한 것.
 	
-- Target
+- **Target**
 	
 	Aspect를 적용하는 곳
 	
-- Advice
+- **Advice**
 	
 	실질적으로 어떤 일을 해야할 지에 대한 것
 	
-- JointPoint
+- **JointPoint**
 	
 	Advice가 적용될 위치
 	
 	생성자 호출 시점
 	
-- PointCut
+- **PointCut**
 	
 	JointPoint의 상세한 스펙을 정의한 것
 	
