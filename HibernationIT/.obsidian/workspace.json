@@ -8,26 +8,29 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a1feb1469390c714",
+            "id": "5d18b04b96047dab",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "obsidian-projects",
-              "state": {}
+              "state": {},
+              "pinned": true
             }
           },
           {
-            "id": "ec64803092eb723f",
+            "id": "f464fc40a93a72d8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/docker-build-from-error-getting-credentials.md",
+                "file": "blog/spring-basic-architect-aop-aspects-instrumentation.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -93,6 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "blog/spring-basic-architect-aop-aspects-instrumentation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,6 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "blog/spring-basic-architect-aop-aspects-instrumentation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -130,7 +135,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "blog/spring-basic-architect-aop-aspects-instrumentation.md"
+              }
             }
           }
         ],
@@ -152,23 +159,25 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "a1feb1469390c714",
+  "active": "f464fc40a93a72d8",
   "lastOpenFiles": [
-    "blog/docker-build-from-error-getting-credentials.md",
-    "blog/spring-springboot.md",
     "blog/spring-basic-architect-data-web.md",
+    "blog/spring-springboot.md",
+    "blog/spring-basic-architect-aop-aspects-instrumentation.md",
+    "blog/docker-build-from-error-getting-credentials.md",
     "blog/framework-library-module-package.md",
+    "0.images/blog/spring-basic-architect-aop-aspects-instrumentation/spring-basic-architect-aop-aspects-instrumentation.png",
+    "0.images/blog/spring-basic-architect-aop-aspects-instrumentation/spring-basic-architect-aop-aspects-instrumentation-1.png",
+    "0.images/blog/spring-basic-architect-data-web/spring-basic-architect-data-web-1.png",
+    "0.images/blog/spring-basic-architect-aop-aspects-instrumentation",
+    "0.images/blog/spring-basic-architect-data-web/spring-basic-architect-data-web.png",
     "blog/0.default.md",
     "0.images/blog/spring-basic-architect-data-web/spring-basic-architect-data-web-5.png",
     "0.images/blog/spring-basic-architect-data-web/spring-basic-architect-data-web-4.png",
     "0.images/blog/spring-basic-architect-data-web/spring-basic-architect-data-web-3.png",
     "0.images/blog/spring-basic-architect-data-web/spring-basic-architect-data-web-2.png",
-    "0.images/blog/spring-basic-architect-data-web/spring-basic-architect-data-web-1.png",
     "0.images/blog/spring-springboot/spring-springboot-3.png",
     "0.images/blog/spring-springboot/spring-springboot-1.png",
-    "0.images/blog/spring-springboot/spring-springboot-2.png",
-    "0.images/blog/spring-basic-architect-data-web/spring-basic-architect-data-web.png",
-    "0.images/blog/spring-springboot/spring-springboot.png",
     "0.images/blog/spring-basic-architect-data-web",
     "spring-springboot-1-3.png.md",
     "0.images/blog/spring-springboot",

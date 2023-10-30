@@ -141,7 +141,13 @@
             "conditions": []
           },
           "sort": {
-            "criteria": []
+            "criteria": [
+              {
+                "field": "created_dt",
+                "order": "desc",
+                "enabled": true
+              }
+            ]
           },
           "id": "8a274f8a-cc91-4947-b509-e671a13dc92a",
           "name": "blog",

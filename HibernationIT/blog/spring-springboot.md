@@ -63,9 +63,11 @@ view: true
 - Data Access / Integration
 	
 	데이터 통합 접근 관련 모듈
+	
 - Web
 	
 	웹 통신 모듈
+	
 - AOP & Aspects
   
 	AOP ( Aspect-Oriented Programing ):
@@ -75,15 +77,19 @@ view: true
 	Aspects:
 	
 	AOP의 기본 모듈로, 부가 기능을 정의한 코드와 정의한 코드를 어디에 적용할 지를 결정하는 포인트를 합친 개념
+	
 - Instrumentation
 	
 	JVM ( Java Vertual Machine )에 사용자 입력에 따른 서비스를 수행하는 프로그램을 추가하는 모듈
+	
 - Messaging
 	
 	메시지라는 개념 기반 애플리케이션을 작성할 수 있도록 도와주는 모듈
+	
 - Core Container
 	
 	스프링 프레임워크의 핵심인 빈(객체) 생명주기와 설정, 처리를 관리하는 컨테이너(모듈)
+	
 - Test
 	
 	테스트를 진행할 수 있도록 해주는 모듈
