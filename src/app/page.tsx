@@ -1,3 +1,4 @@
+import React from 'react'
 import Header from '@/src/components/templates/common/Header/header'
 import Card from '@/src/components/atoms/home/Card/card'
 import styles from './page.module.scss'

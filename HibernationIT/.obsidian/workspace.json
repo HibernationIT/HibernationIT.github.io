@@ -18,13 +18,13 @@
             }
           },
           {
-            "id": "248d64809e470247",
+            "id": "24ae4afafe7e50ec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/springboot-requestbody-dto-mapping.md",
-                "mode": "preview",
+                "file": "icon/bold.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -156,6 +156,8 @@
   },
   "active": "5d18b04b96047dab",
   "lastOpenFiles": [
+    "icon/bold.md",
+    "icon/italic.md",
     "blog/springboot-requestbody-dto-mapping.md",
     "0.images/blog/springboot-requestbody-dto-mapping/springboot-requestbody-dto-mapping.png",
     "0.images/blog/springboot-requestbody-dto-mapping",

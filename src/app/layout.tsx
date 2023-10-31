@@ -1,6 +1,6 @@
 import './reset.scss'
 import './globals.scss'
-import type { Metadata } from 'next'
+import { Metadata } from 'next'
 import { Noto_Sans_KR } from 'next/font/google'
 import React from 'react'
 
@@ -25,6 +25,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="kr">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="bbZ2jHC5uGJy6gqrZ1mX7JzvXjvvvm4fsDuCMrmYhGw"
+        />
+      </head>
       <body className={notoSansKR.className}>{children}</body>
     </html>
   )
