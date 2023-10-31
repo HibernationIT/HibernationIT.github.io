@@ -13,7 +13,9 @@ export default function Header({ activePath }: { activePath?: string }) {
 
   return (
     <header className={styles.header}>
-      <img src="/images/logo.svg" alt="logo" />
+      <Link href="/">
+        <img src="/images/logo.svg" alt="logo" />
+      </Link>
       <ul>
         {menuData.map((menu, idx) => {
           return (

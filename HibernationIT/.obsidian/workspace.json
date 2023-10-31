@@ -16,8 +16,21 @@
               "state": {},
               "pinned": true
             }
+          },
+          {
+            "id": "47aa9d6a189af198",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "icon/link 2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -83,6 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "icon/link 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,6 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "icon/link 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -120,7 +135,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "icon/link 2.md"
+              }
             }
           }
         ],
@@ -142,25 +159,25 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "5d18b04b96047dab",
+  "active": "47aa9d6a189af198",
   "lastOpenFiles": [
+    "icon/link 1.md",
+    "icon/underline.md",
+    "icon/triangle up.md",
+    "icon/triangle right.md",
+    "icon/triangle left.md",
+    "icon/triangle bottom.md",
+    "icon/text background.md",
+    "icon/speech bubble.md",
+    "icon/plus circle.md",
+    "icon/not checked.md",
     "icon/disk.md",
     "icon/mobile.md",
-    "icon/underline.md",
-    "icon/triangleUp.md",
-    "icon/triangleRight.md",
-    "icon/triangleLeft.md",
-    "icon/triangleBottom.md",
-    "icon/textBg.md",
     "icon/strike.md",
-    "icon/speechBubble.md",
     "icon/search.md",
-    "icon/plusCircle.md",
     "icon/pencil.md",
-    "icon/notChecked.md",
     "icon/logout.md",
-    "icon/link-2.md",
-    "icon/link-1.md",
+    "icon/link 2.md",
     "icon/italic.md",
     "icon/image.md",
     "icon/frontend.md",
