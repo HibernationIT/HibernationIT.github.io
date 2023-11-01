@@ -1,6 +1,7 @@
 import React from 'react'
 import Blog from '@/src/common/blog'
 import Content from '@/src/components/templates/common/Content/content'
+import Utterances from '@/src/components/templates/common/Utterances/utterances'
 import moment from 'moment'
 import styles from './page.module.scss'
 
@@ -61,16 +62,7 @@ export default function Page({ params }: IProps) {
         </div>
       </section>
       <Content content={post.content} />
-      <script
-        src="https://utteranc.es/client.js"
-        /*
-        // @ts-ignore */
-        repo="HibernationIT/HibernationIT.github.io"
-        issue-term="pathname"
-        theme="github-light"
-        crossOrigin="anonymous"
-        async
-      />
+      <Utterances />
     </main>
   )
 }
