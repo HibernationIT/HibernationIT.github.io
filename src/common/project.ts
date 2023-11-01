@@ -21,7 +21,7 @@ export default class Project {
         } as Preview
       })
       .filter((meta) => meta.view)
-      .sort((a, b) => b.created_dt.diff(a.created_dt))
+      .sort((a, b) => moment(b.created_dt).diff(moment(a.created_dt)))
   }
 
   public static getPost(post: string): Post {
@@ -41,7 +41,7 @@ export default class Project {
     return {
       tags: data.tags,
       title: data.title,
-      created_dt: moment(data.created_dt),
+      created_dt: data.created_dt,
       image: data.image?.replace('[[', '').replace(']]', ''),
       type: data.type,
       view: data.view,

@@ -20,7 +20,7 @@ export default class Blog {
         }
       })
       .filter((meta) => meta.view)
-      .sort((a, b) => b.created_dt.diff(a.created_dt))
+      .sort((a, b) => moment(b.created_dt).diff(moment(a.created_dt)))
 
     if (title) {
       posts = posts.filter((post) => post.title.includes(title))
@@ -50,7 +50,7 @@ export default class Blog {
     return {
       tags: data.tags,
       title: data.title,
-      created_dt: moment(data.created_dt),
+      created_dt: data.created_dt,
       image: data.image?.replace('[[', '').replace(']]', ''),
       view: data.view,
     }
