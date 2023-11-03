@@ -114,3 +114,5 @@ public class DtoTestController {
 > 3. public의 `getter`와 `setter`를 가지고 있어야 한다.
 
 생성자를 통해 새로운 `instance`를 만들고, `Setter`를 통해 값을 넣어주기 때문에 `@RequestParam`에서는 기본 생성자와 `Setter`가 필요한 것이다.
+
+*잘못된 정보의 비판은 언제든 환영입니다.*

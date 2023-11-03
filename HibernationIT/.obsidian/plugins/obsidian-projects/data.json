@@ -21,7 +21,13 @@
             "coverField": "image"
           },
           "filter": {
-            "conditions": []
+            "conditions": [
+              {
+                "field": "view",
+                "operator": "is-checked",
+                "enabled": true
+              }
+            ]
           },
           "colors": {
             "conditions": []
@@ -40,15 +46,56 @@
           "type": "gallery"
         },
         {
-          "config": {},
+          "config": {
+            "fieldConfig": {
+              "name": {
+                "width": 394
+              },
+              "tags": {
+                "width": 228
+              },
+              "path": {
+                "hide": true
+              },
+              "image": {
+                "hide": true
+              },
+              "type": {
+                "hide": false
+              },
+              "view": {
+                "hide": true
+              }
+            },
+            "orderFields": [
+              "name",
+              "title",
+              "created_dt",
+              "tags",
+              "type",
+              "view"
+            ]
+          },
           "filter": {
-            "conditions": []
+            "conditions": [
+              {
+                "field": "view",
+                "operator": "is-checked",
+                "enabled": true
+              }
+            ]
           },
           "colors": {
             "conditions": []
           },
           "sort": {
-            "criteria": []
+            "criteria": [
+              {
+                "field": "created_dt",
+                "order": "desc",
+                "enabled": true
+              }
+            ]
           },
           "id": "8e9a9d77-e7d2-4233-97a8-7adf88fb320d",
           "name": "Table",
@@ -135,7 +182,13 @@
             ]
           },
           "filter": {
-            "conditions": []
+            "conditions": [
+              {
+                "field": "view",
+                "operator": "is-checked",
+                "enabled": true
+              }
+            ]
           },
           "colors": {
             "conditions": []
@@ -154,15 +207,51 @@
           "type": "gallery"
         },
         {
-          "config": {},
+          "config": {
+            "fieldConfig": {
+              "name": {
+                "width": 391
+              },
+              "path": {
+                "hide": true
+              },
+              "image": {
+                "hide": true
+              },
+              "view": {
+                "hide": true
+              },
+              "tags": {
+                "width": 327
+              }
+            },
+            "orderFields": [
+              "name",
+              "title",
+              "created_dt",
+              "tags"
+            ]
+          },
           "filter": {
-            "conditions": []
+            "conditions": [
+              {
+                "field": "view",
+                "operator": "is-checked",
+                "enabled": true
+              }
+            ]
           },
           "colors": {
             "conditions": []
           },
           "sort": {
-            "criteria": []
+            "criteria": [
+              {
+                "field": "created_dt",
+                "order": "desc",
+                "enabled": true
+              }
+            ]
           },
           "id": "f751c76d-9643-43ee-8c9c-a830ad1ef3e9",
           "name": "Table",
