@@ -23,13 +23,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/evolution-history-of-server-management.md",
+                "file": "blog/oracle-cloud-with-k3s.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -95,6 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "blog/oracle-cloud-with-k3s.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,6 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "blog/oracle-cloud-with-k3s.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -132,7 +135,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "blog/oracle-cloud-with-k3s.md"
+              }
             }
           }
         ],
@@ -154,15 +159,19 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "5d18b04b96047dab",
+  "active": "a8418203366252f0",
   "lastOpenFiles": [
-    "blog/evolution-history-of-server-management.md",
+    "blog/oracle-cloud-with-k3s.md",
     "blog/docker-build-from-error-getting-credentials.md",
+    "blog/evolution-history-of-server-management.md",
+    "0.images/blog/oracle-cloud-with-k3s/oracle-cloud-with-k3s.png",
     "blog/framework-library-module-package.md",
     "blog/spring-basic-architect-aop-aspects-instrumentation.md",
-    "blog/springboot-requestbody-dto-mapping.md",
-    "blog/spring-springboot.md",
+    "0.images/blog/oracle-cloud-with-k3s",
     "blog/spring-basic-architect-data-web.md",
+    "blog/spring-springboot.md",
+    "blog/springboot-requestbody-dto-mapping.md",
+    "blog/0.default.md",
     "0.images/blog/evolution-history-of-server-management/evolution-history-of-server-management.png",
     "0.images/blog/evolution-history-of-server-management",
     "0.images/blog/evolution-history-of-server-management/evolution-history-of-server-management-1.png",
@@ -185,14 +194,10 @@
     "icon/strike.md",
     "icon/search.md",
     "icon/pencil.md",
-    "icon/logout.md",
-    "icon/italic.md",
-    "icon/image.md",
     "0.images/icon/triangleUp.png",
     "0.images/icon/textBg.png",
     "0.images/icon/search.png",
     "0.images/icon/cancel.svg",
-    "0.images/icon/disk.png",
     "0.images/blog/springboot-requestbody-dto-mapping",
     "0.images/blog/spring-basic-architect-aop-aspects-instrumentation",
     "0.images/blog/spring-basic-architect-data-web",
@@ -201,7 +206,6 @@
     "0.images/illust",
     "illust",
     "0.images/project/notion2component",
-    "0.images/project/game-develop-group-homepage",
     "무제 파일.canvas"
   ]
 }
