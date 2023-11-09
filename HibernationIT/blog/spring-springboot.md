@@ -8,7 +8,7 @@ created_dt: 2023-04-28
 image: "[[spring-springboot.png]]"
 view: true
 ---
-스프링과 스프링 부트에 대해 천천히 개념 정리하며 공부하기 위한 포스팅입니다.
+스프링과 스프링 부트에 대해 천천히 개념 정리하며 공부하기 위한 포스팅이다.
 
 # What is Spring?
 

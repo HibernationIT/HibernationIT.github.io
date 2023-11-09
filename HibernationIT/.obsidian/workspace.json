@@ -29,8 +29,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/oracle-cloud-with-k3s.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +111,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/oracle-cloud-with-k3s.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -135,9 +132,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "blog/oracle-cloud-with-k3s.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -159,18 +154,18 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "a8418203366252f0",
+  "active": "5d18b04b96047dab",
   "lastOpenFiles": [
     "blog/oracle-cloud-with-k3s.md",
-    "blog/docker-build-from-error-getting-credentials.md",
-    "blog/evolution-history-of-server-management.md",
-    "0.images/blog/oracle-cloud-with-k3s/oracle-cloud-with-k3s.png",
     "blog/framework-library-module-package.md",
-    "blog/spring-basic-architect-aop-aspects-instrumentation.md",
-    "0.images/blog/oracle-cloud-with-k3s",
-    "blog/spring-basic-architect-data-web.md",
-    "blog/spring-springboot.md",
     "blog/springboot-requestbody-dto-mapping.md",
+    "blog/spring-springboot.md",
+    "blog/spring-basic-architect-data-web.md",
+    "blog/spring-basic-architect-aop-aspects-instrumentation.md",
+    "blog/evolution-history-of-server-management.md",
+    "blog/docker-build-from-error-getting-credentials.md",
+    "0.images/blog/oracle-cloud-with-k3s/oracle-cloud-with-k3s.png",
+    "0.images/blog/oracle-cloud-with-k3s",
     "blog/0.default.md",
     "0.images/blog/evolution-history-of-server-management/evolution-history-of-server-management.png",
     "0.images/blog/evolution-history-of-server-management",

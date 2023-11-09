@@ -8,7 +8,7 @@ created_dt: 2023-06-13
 image: "[[spring-basic-architect-data-web.png]]"
 view: true
 ---
-스프링과 스프링 부트에 대해 천천히 개념 정리하며 공부하기 위한 포스팅입니다.
+스프링과 스프링 부트에 대해 천천히 개념 정리하며 공부하기 위한 포스팅이다.
 
 ![image1](spring-basic-architect-data-web-1.png)
 

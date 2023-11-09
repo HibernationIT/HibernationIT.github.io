@@ -11,7 +11,7 @@ view: true
 ---
 Spring Boot를 사용하여 REST API를 개발할 때, Body의 값을 가져올 때마다 한번씩 값이 `null`로 나온 경험은 누구나 한번씩은 있을 것이다.
 
-그렇기 때문에 Spring Boot에서 Request Body를 맵핑할 때, 어떤 방식으로 DTO에 맵핑이 되는지에 대해 정리하여 기억하기 위해 정리한 포스팅 입니다.
+그렇기 때문에 Spring Boot에서 Request Body를 맵핑할 때, 어떤 방식으로 DTO에 맵핑이 되는지에 대해 정리하여 기억하기 위해 정리한 포스팅이다.
 
 # @RequestBody는 Setter를 사용하지 않는다
 
