@@ -26,6 +26,11 @@ export default function RootLayout({
   return (
     <html lang="kr">
       <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4998422659731294"
+          crossOrigin="anonymous"
+        />
         <meta
           name="google-site-verification"
           content="bbZ2jHC5uGJy6gqrZ1mX7JzvXjvvvm4fsDuCMrmYhGw"

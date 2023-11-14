@@ -18,30 +18,19 @@
             }
           },
           {
-            "id": "a8418203366252f0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "blog/oracle-cloud-with-k3s.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "38c83eb50b3c65a0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/oracle-cloud-with-k3s.md",
+                "file": "blog/oracle-cloud-with-k3s-tls.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -107,6 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "blog/oracle-cloud-with-k3s-tls.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,6 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "blog/oracle-cloud-with-k3s-tls.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               }
@@ -144,7 +135,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "blog/oracle-cloud-with-k3s-tls.md"
+              }
             }
           }
         ],
@@ -166,16 +159,19 @@
       "obsidian-projects:Open projects": false
     }
   },
-  "active": "5d18b04b96047dab",
+  "active": "38c83eb50b3c65a0",
   "lastOpenFiles": [
     "blog/oracle-cloud-with-k3s.md",
-    "0.images/blog/oracle-cloud-with-k3s/oracle-cloud-with-k3s.png",
-    "0.images/blog/oracle-cloud-with-k3s/oracle-cloud-with-k3s.png",
+    "blog/oracle-cloud-with-k3s-tls.md",
+    "0.images/blog/oracle-cloud-with-k3s-tls/oracle-cloud-with-k3s-tls.png",
+    "0.images/blog/oracle-cloud-with-k3s-tls",
     "blog/framework-library-module-package.md",
+    "blog/spring-basic-architect-aop-aspects-instrumentation.md",
+    "0.images/blog/oracle-cloud-with-k3s/oracle-cloud-with-k3s.png",
+    "0.images/blog/oracle-cloud-with-k3s/oracle-cloud-with-k3s.png",
     "blog/springboot-requestbody-dto-mapping.md",
     "blog/spring-springboot.md",
     "blog/spring-basic-architect-data-web.md",
-    "blog/spring-basic-architect-aop-aspects-instrumentation.md",
     "blog/evolution-history-of-server-management.md",
     "blog/docker-build-from-error-getting-credentials.md",
     "0.images/blog/oracle-cloud-with-k3s",
@@ -201,10 +197,8 @@
     "icon/mobile.md",
     "icon/strike.md",
     "icon/search.md",
-    "icon/pencil.md",
     "0.images/icon/triangleUp.png",
     "0.images/icon/textBg.png",
-    "0.images/icon/search.png",
     "0.images/blog/springboot-requestbody-dto-mapping",
     "0.images/blog/spring-basic-architect-aop-aspects-instrumentation",
     "0.images/blog/spring-basic-architect-data-web",
@@ -212,7 +206,6 @@
     "0.images/blog/framework-library-module-package",
     "0.images/illust",
     "illust",
-    "0.images/project/notion2component",
     "무제 파일.canvas"
   ]
 }
