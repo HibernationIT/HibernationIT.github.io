@@ -2,9 +2,9 @@ import React from 'react'
 import Blog from '@/src/common/blog'
 import Content from '@/src/components/templates/common/Content/content'
 import Utterances from '@/src/components/templates/common/Utterances/utterances'
+import AmpAd from '@/src/components/templates/common/AmpAd/AmpAd'
 import moment from 'moment'
 import styles from './page.module.scss'
-import AmpAd from '@/src/components/templates/common/AmpAd/AmpAd'
 
 interface Params {
   page: string
