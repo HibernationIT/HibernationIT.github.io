@@ -1,5 +1,6 @@
 import Illust from '@/src/common/illust'
 import Template from '@/src/components/templates/illust/template/template'
+import AdBox from '@/src/components/templates/common/AdBox/AdBox'
 import styles from './page.module.scss'
 
 export default function Page() {
@@ -7,6 +8,7 @@ export default function Page() {
 
   return (
     <section className={styles.content}>
+      <AdBox />
       <Template photos={photos} />
     </section>
   )

@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react'
 
-export default function AmpAd() {
+export default function AdBox() {
   useEffect(() => {
     const pushAd = () => {
       try {

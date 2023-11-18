@@ -2,7 +2,7 @@ import React from 'react'
 import Blog from '@/src/common/blog'
 import Content from '@/src/components/templates/common/Content/content'
 import Utterances from '@/src/components/templates/common/Utterances/utterances'
-import AmpAd from '@/src/components/templates/common/AmpAd/AmpAd'
+import AdBox from '@/src/components/templates/common/AdBox/AdBox'
 import moment from 'moment'
 import styles from './page.module.scss'
 
@@ -62,9 +62,9 @@ export default function Page({ params }: IProps) {
           ))}
         </div>
       </section>
-      <AmpAd />
+      <AdBox />
       <Content content={post.content} />
-      <AmpAd />
+      <AdBox />
       <Utterances />
     </main>
   )
