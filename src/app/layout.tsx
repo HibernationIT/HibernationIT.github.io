@@ -31,6 +31,11 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4998422659731294"
           crossOrigin="anonymous"
         />
+        <script
+          async
+          custom-element="amp-ad"
+          src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"
+        />
         <meta
           name="google-site-verification"
           content="bbZ2jHC5uGJy6gqrZ1mX7JzvXjvvvm4fsDuCMrmYhGw"
