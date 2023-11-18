@@ -61,8 +61,25 @@ export default function Page({ params }: IProps) {
           ))}
         </div>
       </section>
+      <ins
+        className="adsbygoogle"
+        style={{ display: 'block' }}
+        data-ad-client="ca-pub-4998422659731294"
+        data-ad-slot="6878857551"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      />
       <Content content={post.content} />
+      <ins
+        className="adsbygoogle"
+        style={{ display: 'block' }}
+        data-ad-client="ca-pub-4998422659731294"
+        data-ad-slot="6878857551"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      />
       <Utterances />
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
     </main>
   )
 }

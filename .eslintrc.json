@@ -31,6 +31,7 @@
     "react/require-default-props": "off",
     "react/jsx-props-no-spreading": 0,
     "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "react/style-prop-object": "off",
     "react/button-has-type": "off",
     "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/no-explicit-any": "off",
