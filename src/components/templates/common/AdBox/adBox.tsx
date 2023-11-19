@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useEffect } from 'react'
+import styles from './adBox.module.scss'
 
 export default function AdBox() {
   useEffect(() => {
@@ -20,7 +21,7 @@ export default function AdBox() {
         pushAd()
         clearInterval(interval)
       }
-    }, 300)
+    }, 500)
 
     return () => {
       clearInterval(interval)
@@ -28,13 +29,15 @@ export default function AdBox() {
   }, [])
 
   return (
-    <ins
-      className="adsbygoogle"
-      style={{ display: 'block' }}
-      data-ad-client="ca-pub-4998422659731294"
-      data-ad-slot="6878857551"
-      data-ad-format="auto"
-      data-full-width-responsive="true"
-    />
+    <section className={styles.adbox}>
+      <ins
+        className="adsbygoogle"
+        style={{ display: 'block' }}
+        data-ad-client="ca-pub-4998422659731294"
+        data-ad-slot="6878857551"
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      />
+    </section>
   )
 }

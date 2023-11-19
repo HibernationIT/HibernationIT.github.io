@@ -2,7 +2,7 @@ import React from 'react'
 import Blog from '@/src/common/blog'
 import Content from '@/src/components/templates/common/Content/content'
 import Utterances from '@/src/components/templates/common/Utterances/utterances'
-import AdBox from '@/src/components/templates/common/AdBox/AdBox'
+import AdBox from '@/src/components/templates/common/AdBox/adBox'
 import moment from 'moment'
 import styles from './page.module.scss'
 
