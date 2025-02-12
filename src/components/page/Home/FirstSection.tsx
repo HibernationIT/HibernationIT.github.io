@@ -102,11 +102,20 @@ const s = {
         align-items: center;
         gap: 16px;
 
+        @media (width < 524px) {
+          gap: 8px;
+        }
+
         svg {
           fill: #ffffff;
 
           width: 64px;
           height: 64px;
+
+          @media (width < 524px) {
+            width: 38px;
+            height: 38px;
+          }
         }
 
         p {
@@ -114,6 +123,11 @@ const s = {
           font-weight: 700;
           line-height: 48px;
           color: #ffffff;
+
+          @media (width < 524px) {
+            font-size: 36px;
+            line-height: 36px;
+          }
         }
       }
 
@@ -122,6 +136,11 @@ const s = {
 
         font-size: 24px;
         color: #ffffff;
+
+        @media (width < 524px) {
+          margin-top: 20px;
+          font-size: 18px;
+        }
       }
 
       & > div {
@@ -130,9 +149,21 @@ const s = {
         display: flex;
         gap: 16px;
 
+        @media (width < 524px) {
+          margin-top: 36px;
+        }
+
         a {
           text-decoration: none;
           color: #ffffff;
+        }
+
+        & > div {
+          @media (width < 524px) {
+            padding: 4px 12px;
+            font-size: 14px;
+            line-height: 16px;
+          }
         }
 
         & > div:not(:hover) {
@@ -170,6 +201,11 @@ const s = {
       width: 48px;
       height: 48px;
 
+      @media (width < 524px) {
+        width: 32px;
+        height: 32px;
+      }
+
       border: none;
       background: none;
 
@@ -190,7 +226,8 @@ const s = {
       display: flex;
       justify-content: space-around;
 
-      width: 1200px;
+      max-width: 1200px;
+      width: 100%;
 
       & > a {
         display: block;
@@ -198,6 +235,14 @@ const s = {
 
         svg {
           fill: #dfdfdf;
+
+          width: 96px;
+          height: 96px;
+
+          @media (width < 524px) {
+            width: 48px;
+            height: 48px;
+          }
         }
 
         p {
@@ -205,6 +250,10 @@ const s = {
           font-weight: 700;
           text-align: center;
           color: #dfdfdf;
+
+          @media (width < 524px) {
+            font-size: 14px;
+          }
         }
 
         &:hover {

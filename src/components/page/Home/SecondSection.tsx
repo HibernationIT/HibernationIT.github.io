@@ -91,11 +91,11 @@ const s = {
 
     background: linear-gradient(var(--bg-900), var(--bg-800));
 
-    padding: 24px;
+    padding: 84px 24px 24px 24px;
     box-sizing: border-box;
 
     width: 100%;
-    height: calc(100vh - 84px);
+    min-height: 100vh;
   `,
 
   Contents: styled.div`
@@ -120,7 +120,7 @@ const s = {
     display: grid;
     grid-template-columns: repeat(auto-fill, 96px);
     justify-content: space-between;
-    gap: 20px;
+    gap: 16px;
 
     perspective: 512px;
 

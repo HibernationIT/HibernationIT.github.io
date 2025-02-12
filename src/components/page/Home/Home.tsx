@@ -13,8 +13,8 @@ export default function Home() {
   const [step, setStep] = useState(0);
 
   const { element: first, onScroll: onFirst } = useScrollToElement({ behavior: "smooth", block: "end" });
-  const { element: second, onScroll: onSecond } = useScrollToElement({ behavior: "smooth", block: "end" });
-  const { element: footer, onScroll: onFooter } = useScrollToElement({ behavior: "smooth", block: "end" });
+  const { element: second, onScroll: onSecond } = useScrollToElement({ behavior: "smooth", block: "start" });
+  const { element: footer, onScroll: onFooter } = useScrollToElement({ behavior: "smooth", block: "start" });
 
   useEffect(() => {
     const onWheelMove = (e: WheelEvent) => {
@@ -34,9 +34,15 @@ export default function Home() {
         setStep((state) => (state > 0 ? state - 1 : state));
       }
     };
+
+    const onTouchMove = (e: TouchEvent) => {
+      setStep(-1);
+    };
+    window.addEventListener("touchmove", onTouchMove, { passive: false });
     window.addEventListener("wheel", onWheelMove, { passive: false });
 
     return () => {
+      window.removeEventListener("touchmove", onTouchMove);
       window.removeEventListener("wheel", onWheelMove);
     };
   }, [setStep]);
