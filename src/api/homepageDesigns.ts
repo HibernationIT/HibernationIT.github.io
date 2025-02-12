@@ -1,7 +1,7 @@
 import { useDelete, useGet, usePost, usePut } from "lib/reactQuery";
 import { Pageable } from "lib/axios";
 
-const BaseUrl = "/v1/console/homepage/designs";
+const BaseUrl = "/v1/homepage/designs";
 
 export interface HomepageDesignResponse {
   createdAt: string;
@@ -9,15 +9,6 @@ export interface HomepageDesignResponse {
   createdBy: string;
   updatedBy: string;
   id: number;
-  name: string;
-  description: string;
-  link: string;
-  view: boolean;
-  image: string;
-  designs: string[];
-}
-
-export interface HomepageDesignRequest {
   name: string;
   description: string;
   link: string;
@@ -42,23 +33,5 @@ export const useReadHomepageDesign = ({ id }: { id: number }) => {
     key: [url],
     url: url,
     enabled: !Number.isNaN(id) && id !== undefined,
-  });
-};
-
-export const useCreateHomepageDesign = () => {
-  return usePost<HomepageDesignRequest, HomepageDesignResponse>({
-    url: BaseUrl,
-  });
-};
-
-export const useUpdateHomepageDesign = () => {
-  return usePut<HomepageDesignRequest, HomepageDesignResponse>({
-    url: BaseUrl,
-  });
-};
-
-export const useDeleteHomepageDesign = () => {
-  return useDelete<void>({
-    url: BaseUrl,
   });
 };
