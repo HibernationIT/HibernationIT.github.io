@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d5056ac8.css",
+    "main.js": "/static/js/main.dfc8ee92.js",
+    "static/media/project_illust.svg": "/static/media/project_illust.e9fb3454a585eac0777fab5f77e224de.svg",
+    "static/media/logo.svg": "/static/media/logo.d2696434d8bcbcb5a833d2bce1d973e8.svg",
+    "static/media/design_illust.svg": "/static/media/design_illust.f2cb27a539e0671dcfb47ddabb8b36b0.svg",
+    "static/media/blog_illust.svg": "/static/media/blog_illust.207f6ee7e04cf154698fd36c7c6db153.svg",
+    "static/media/icon_illust.svg": "/static/media/icon_illust.2681009cc2a796e8962d229588b5c942.svg",
+    "static/media/sun-line.svg": "/static/media/sun-line.2f0649fa5444a1b9bb0b8d54e4d76727.svg",
+    "index.html": "/index.html",
+    "static/media/home-fill.svg": "/static/media/home-fill.6786cd0e8ab26fb01169750a7df5db1f.svg",
+    "static/media/moon-line.svg": "/static/media/moon-line.c2e04dc7c53d2dbed2e7295dbf3f6cd9.svg",
+    "static/media/monitor-line.svg": "/static/media/monitor-line.7a516e9c9146e0b0a813bc9602c16641.svg",
+    "static/media/keyboard_arrow_down.svg": "/static/media/keyboard_arrow_down.4f657fdb2be38c468e191fcbc3e81e80.svg",
+    "main.d5056ac8.css.map": "/static/css/main.d5056ac8.css.map",
+    "main.dfc8ee92.js.map": "/static/js/main.dfc8ee92.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5056ac8.css",
+    "static/js/main.dfc8ee92.js"
+  ]
+}
