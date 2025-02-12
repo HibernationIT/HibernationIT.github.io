@@ -1,0 +1,18 @@
+@use 'colors';
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;600;700&display=swap');
+@import 'theme';
+@import 'reset';
+
+#root > main {
+  background-color: var(--bg);
+}
+
+* {
+  font-family: "Noto Sans KR", serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--text);
+
+  transition: background-color 240ms, color 240ms, border-color 240ms;
+}

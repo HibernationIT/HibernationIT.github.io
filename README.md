@@ -12,7 +12,7 @@ https://hibernationit.github.io
 
 ### Framework
 
-- Next JS
+- React
 
 ## How do I write Contents?
 

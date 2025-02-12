@@ -1,0 +1,49 @@
+[theme-mode='light'] {
+  --bg: var(--primary-100);
+  --bg-900: var(--primary-100);
+  --bg-800: var(--primary-200);
+  --bg-700: var(--primary-300);
+  --bg-600: var(--primary-400);
+  --bg-500: var(--primary-500);
+  --bg-400: var(--primary-600);
+  --bg-300: var(--primary-700);
+  --bg-200: var(--primary-800);
+  --bg-100: var(--primary-900);
+
+  --highlight: var(--primary-100);
+
+  --text: var(--black-400);
+  --light-text: var(--black-100);
+  --dark-text: var(--black);
+
+  --button-active: var(--white-700);
+  --button-hover: var(--white-800);
+
+  --background-blur: rgba(255, 255, 255, 0.2);
+  --background-blur-50: rgba(255, 255, 255, 0.5);
+}
+
+[theme-mode='dark'] {
+  --bg: var(--primary-900);
+  --bg-900: var(--primary-900);
+  --bg-800: var(--primary-800);
+  --bg-700: var(--primary-700);
+  --bg-600: var(--primary-600);
+  --bg-500: var(--primary-500);
+  --bg-400: var(--primary-400);
+  --bg-300: var(--primary-300);
+  --bg-200: var(--primary-200);
+  --bg-100: var(--primary-100);
+
+  --highlight: var(--primary-800);
+
+  --text: var(--white-600);
+  --light-text: var(--white-100);
+  --dark-text: var(--white);
+
+  --button-active: var(--black-700);
+  --button-hover: var(--black-800);
+
+  --background-blur: rgba(0, 0, 0, 0.2);
+  --background-blur-50: rgba(0, 0, 0, 0.5);
+}
