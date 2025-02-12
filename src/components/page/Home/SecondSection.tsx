@@ -1,15 +1,17 @@
-import React, { useState } from "react";
+import React, { RefObject, useState } from "react";
 
 import styled from "styled-components";
 import Title from "components/atom/Title";
 import { HomepageStackResponse, useReadHomepageStacks } from "api/homepageStacks";
 
 import { ReactComponent as MonitorIcon } from "assets/icon/monitor-line.svg";
-import { ReactComponent as MonitorSpeakerIcon } from "assets/icon/monitor-speaker-line.svg";
-import { ReactComponent as KeyboardArrow } from "assets/icon/keyboard_arrow_down.svg";
 import Chip from "components/atom/Chip";
 
-export default function SecondSection() {
+interface IProps {
+  scrollRef: RefObject<HTMLDivElement>;
+}
+
+export default function SecondSection({ scrollRef }: IProps) {
   // STATE
   const [activeStack, setActiveStack] = useState<HomepageStackResponse>();
 
@@ -18,7 +20,7 @@ export default function SecondSection() {
   const { data: backStacks } = useReadHomepageStacks({ type: "Back" });
 
   return (
-    <s.Layout>
+    <s.Layout ref={scrollRef}>
       <s.Contents>
         <Title mode="header1">What I can do</Title>
         <Title mode="header4">지금까지 실무에서 사용했거나 취미로 사용해본 프레임워크 또는 언어입니다.</Title>

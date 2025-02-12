@@ -1,7 +1,7 @@
 import { useTheme } from "components/provider/ThemeProvider";
 import Chip from "components/atom/Chip";
 import { Link } from "react-router-dom";
-import React from "react";
+import React, { RefObject } from "react";
 import styled from "styled-components";
 
 import { ReactComponent as Logo } from "assets/image/logo.svg";
@@ -11,11 +11,16 @@ import { ReactComponent as Design } from "assets/image/design_illust.svg";
 import { ReactComponent as Icon } from "assets/image/icon_illust.svg";
 import { ReactComponent as KeyboardArrowDown } from "assets/icon/keyboard_arrow_down.svg";
 
-export default function FirstSection() {
+interface IProps {
+  scrollRef: RefObject<HTMLDivElement>;
+  onClickScroll: () => void;
+}
+
+export default function FirstSection({ scrollRef, onClickScroll }: IProps) {
   const { theme } = useTheme();
 
   return (
-    <s.Layout $bg_src={`/image/main_illust_${theme}.svg`}>
+    <s.Layout $bg_src={`/image/main_illust_${theme}.svg`} ref={scrollRef}>
       <s.TitleBox>
         <div>
           <h1>
@@ -54,7 +59,7 @@ export default function FirstSection() {
             <p>ICON</p>
           </Link>
         </div>
-        <button>
+        <button onClick={onClickScroll}>
           <KeyboardArrowDown />
         </button>
       </s.NavBox>

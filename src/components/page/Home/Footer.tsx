@@ -1,12 +1,16 @@
-import React from "react";
+import React, { RefObject } from "react";
 
 import styled from "styled-components";
 
 import { ReactComponent as Logo } from "assets/image/logo.svg";
 
-export default function Footer() {
+interface IProps {
+  scrollRef: RefObject<HTMLDivElement>;
+}
+
+export default function Footer({ scrollRef }: IProps) {
   return (
-    <s.Layout>
+    <s.Layout ref={scrollRef}>
       <s.H1>
         <Logo />
         Hibernation IT
