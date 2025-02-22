@@ -20,16 +20,20 @@ export default function Project() {
 
 const s = {
   Layout: styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 64px;
+    margin: 0 auto;
+    padding: 0 32px;
+    box-sizing: border-box;
+
+    max-width: 1200px;
+    width: 100%;
   `,
 
   TitleBox: styled.div`
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    margin-bottom: 64px;
 
     width: 100%;
 
@@ -41,7 +45,6 @@ const s = {
     flex-direction: column;
     gap: 64px;
 
-    max-width: 1200px;
     width: 100%;
   `,
 };

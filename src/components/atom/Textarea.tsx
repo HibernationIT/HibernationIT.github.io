@@ -7,20 +7,24 @@ import { Block, locales } from "@blocknote/core";
 
 interface IProps {
   initialContent?: Block[];
+  editable?: boolean;
   onChange?: (value: Block[]) => void;
   uploadFile?: (file: File) => Promise<string>;
 }
 
-export default function Textarea({ initialContent, onChange, uploadFile }: IProps) {
-  const editor = useCreateBlockNote({
-    dictionary: locales.ko,
-    initialContent: initialContent,
-    uploadFile,
-  });
+export default function Textarea({ initialContent, editable, onChange, uploadFile }: IProps) {
+  const editor = useCreateBlockNote(
+    {
+      dictionary: locales.ko,
+      initialContent: initialContent,
+      uploadFile,
+    },
+    [initialContent],
+  );
 
   return (
     <s.Textarea>
-      <BlockNoteView editor={editor} onChange={() => onChange && onChange(editor.document)} />
+      <BlockNoteView editor={editor} editable={editable} onChange={() => onChange && onChange(editor.document)} />
     </s.Textarea>
   );
 }

@@ -16,11 +16,7 @@ export default function App() {
           key={(parentPath ?? "") + route.path}
           path={(parentPath ?? "") + route.path}
           element={
-            route.component === undefined ? undefined : route.showBreadcrumbs ? (
-              <MainWithBreadcrumbs>
-                <route.component />
-              </MainWithBreadcrumbs>
-            ) : (
+            route.component === undefined ? undefined : (
               <Main>
                 <route.component />
               </Main>
@@ -38,16 +34,6 @@ function Main({ children }: { children: React.ReactNode }) {
   return (
     <s.Layout>
       <NavigateBar />
-      {children}
-    </s.Layout>
-  );
-}
-
-function MainWithBreadcrumbs({ children }: { children: React.ReactNode }) {
-  return (
-    <s.Layout>
-      <NavigateBar />
-      <Breadcrumbs />
       {children}
     </s.Layout>
   );

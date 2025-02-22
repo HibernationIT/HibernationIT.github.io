@@ -30,7 +30,7 @@ export default function ContentsCard({ data }: { data: HomepageProjectResponse }
         </s.Stacks>
 
         <s.LinkButton>
-          <Button onClick={() => navigate(`/project/${data.id}`)}>
+          <Button onClick={() => navigate(`/project/${data.name}`)}>
             See more
             <ArrowRightIcon />
           </Button>
@@ -51,6 +51,16 @@ const s = {
       object-fit: cover;
 
       border-radius: 8px;
+    }
+
+    @media (width < 524px) {
+      flex-direction: column;
+      gap: 20px;
+
+      img {
+        width: 100%;
+        height: 200px;
+      }
     }
   `,
 

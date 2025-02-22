@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "components/page/Home/Home";
 import Project from "components/page/Project/Project";
+import ProjectDetail from "components/page/Project/ProjectDetail";
 
 export interface RouteItem {
   path: string;
@@ -24,5 +25,12 @@ export const routes: RouteItem[] = [
     name: "PROJECT",
     component: Project,
     show: true,
+    children: [
+      {
+        path: "/:name",
+        component: ProjectDetail,
+        show: false,
+      },
+    ],
   },
 ];

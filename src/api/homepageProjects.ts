@@ -29,11 +29,11 @@ export const useReadHomepageProjects = (params: { name?: string; tags?: string; 
   });
 };
 
-export const useReadHomepageProject = ({ id }: { id: number }) => {
-  const url = `${BaseUrl}/${id}`;
+export const useReadHomepageProject = ({ name }: { name?: string }) => {
+  const url = `${BaseUrl}/${name}`;
   return useGet<HomepageProjectResponse>({
     key: [url],
     url: url,
-    enabled: !Number.isNaN(id) && id !== undefined,
+    enabled: name !== undefined && name !== "",
   });
 };
